@@ -25,6 +25,8 @@
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.12",
     "@types/node": "^15.12.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
     "babel-jest": "^27.0.2",
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
