@@ -1,5 +1,6 @@
 require('dotenv').config()
 import { Request, Response } from 'express'
+const { errorCard } = require('../src/cards/error-card.ts')
 
 // Setup express
 const express = require('express')
@@ -27,7 +28,7 @@ app.get('/api/', (req: Request, res: Response) => {
 
 // Send 404 for incorrect request URL
 app.use('*', (req: Request, res: Response) => {
-    res.sendStatus(404)
+    res.send(errorCard('Invalid API URL'))
 })
 
 app.listen(process.env.PORT, () => {

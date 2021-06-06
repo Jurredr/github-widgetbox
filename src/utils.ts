@@ -11,9 +11,9 @@ function parseStringToArray(str: string, delimiter: string) {
     return str.split(delimiter)
 }
 
-function githubRequest(method: string, data: string, headers: string) {
+function githubRequest(method: string, dest: string, data: string, headers: string) {
     return axios({
-        url: 'https://api.github.com/',
+        url: 'https://api.github.com/' + dest,
         method,
         headers,
         data,
