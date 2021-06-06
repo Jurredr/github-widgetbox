@@ -8,11 +8,12 @@ const app = express()
 
 // Handle skill-box api request
 app.get('/api/', (req: Request, res: Response) => {
+
     // Get the query parameters
     const { username, languages, tools, } = req.query
 
-    // Content response-type will be SVG
-    // res.setHeader("Content-Type", "image/svg+xml");
+    // Content response-type is SVG
+    res.setHeader("Content-Type", "image/svg+xml");
 
     // Fetch stats here
 
@@ -28,9 +29,11 @@ app.get('/api/', (req: Request, res: Response) => {
 
 // Send 404 for incorrect request URL
 app.use('*', (req: Request, res: Response) => {
+    res.setHeader("Content-Type", "image/svg+xml");
     res.send(errorCard('Invalid API URL'))
 })
 
+// Start listening on defined port
 app.listen(process.env.PORT, () => {
-    console.log(`Example app listening at http://localhost:${process.env.PORT}`)
+    console.log(`Github-SkillBox listening at http://localhost:${process.env.PORT}`)
 })
