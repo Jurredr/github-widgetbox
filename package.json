@@ -1,7 +1,7 @@
 {
   "name": "github-skillbox",
   "version": "1.0.0",
-  "description": "Generate experience-overviews for languages & tools for GitHub Readme profiles.",
+  "description": "Generate experience-overviews with languages & tools for GitHub Readme profiles.",
   "main": "index.ts",
   "scripts": {
     "dev": "nodemon api/index.ts"
