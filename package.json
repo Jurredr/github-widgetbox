@@ -4,11 +4,11 @@
   "description": "Generate experience-overviews for languages & tools for GitHub Readme profiles.",
   "main": "index.ts",
   "scripts": {
-    "dev": "nodemon index.ts"
+    "dev": "nodemon api/index.ts"
   },
   "repository": {
     "type": "git",
-    "url": "github-skillbox"
+    "url": "https://github.com/Jurredr/github-skillbox/"
   },
   "keywords": [
     "GitHub",
