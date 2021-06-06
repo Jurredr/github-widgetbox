@@ -1,0 +1,44 @@
+{
+  "name": "github-skillbox",
+  "version": "1.0.0",
+  "description": "Generate experience-overviews for languages & tools for GitHub Readme profiles.",
+  "main": "index.ts",
+  "scripts": {
+    "run": "nodemon index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github-skillbox"
+  },
+  "keywords": [
+    "GitHub",
+    "Readme",
+    "Utility",
+    "Skills",
+    "Languages"
+  ],
+  "author": "Jurredr",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.4",
+    "babel-jest": "^27.0.2",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.4",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.1",
+    "sass": "^1.34.1",
+    "sass-loader": "^12.0.0",
+    "ts-jest": "^27.0.2",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "github-username-regex": "^1.0.0"
+  }
+}
