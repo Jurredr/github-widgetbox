@@ -1,50 +1,52 @@
 {
-  "name": "github-skillbox",
-  "version": "1.0.0",
-  "description": "Generate experience-overviews with languages & tools for GitHub Readme profiles.",
-  "main": "index.ts",
-  "scripts": {
-    "dev": "nodemon api/index.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Jurredr/github-skillbox/"
-  },
-  "keywords": [
-    "GitHub",
-    "Readme",
-    "Utility",
-    "Skills",
-    "Languages"
-  ],
-  "author": "Jurredr",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/eslint-parser": "^7.14.4",
-    "@types/dotenv": "^8.2.0",
-    "@types/express": "^4.17.12",
-    "@types/node": "^15.12.1",
-    "@typescript-eslint/eslint-plugin": "^4.26.0",
-    "@typescript-eslint/parser": "^4.26.0",
-    "babel-jest": "^27.0.2",
-    "eslint": "^7.28.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "jest": "^27.0.4",
-    "nodemon": "^2.0.7",
-    "prettier": "^2.3.1",
-    "sass": "^1.34.1",
-    "sass-loader": "^12.0.0",
-    "ts-jest": "^27.0.2",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.3.2",
-    "webpack": "^5.38.1"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "github-username-regex": "^1.0.0"
-  }
+    "name": "github-widgetbox",
+    "version": "1.0.0",
+    "description": "[✨] Beautiful, dynamic widgets for GitHub Readme profiles. (Statistics, Languages, etc.)",
+    "main": "index.ts",
+    "scripts": {
+        "dev": "nodemon api/index.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Jurredr/github-widgetbox/"
+    },
+    "keywords": [
+        "GitHub",
+        "Readme",
+        "Widget",
+        "Utility",
+        "Skills",
+        "Languages",
+        "Statistics"
+    ],
+    "author": "Jurredr",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.14.3",
+        "@babel/eslint-parser": "^7.14.4",
+        "@types/dotenv": "^8.2.0",
+        "@types/express": "^4.17.12",
+        "@types/node": "^15.12.1",
+        "@typescript-eslint/eslint-plugin": "^4.26.0",
+        "@typescript-eslint/parser": "^4.26.0",
+        "babel-jest": "^27.0.2",
+        "eslint": "^7.28.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "jest": "^27.0.4",
+        "nodemon": "^2.0.7",
+        "prettier": "^2.3.1",
+        "sass": "^1.34.1",
+        "sass-loader": "^12.0.0",
+        "ts-jest": "^27.0.2",
+        "ts-node": "^10.0.0",
+        "typescript": "^4.3.2",
+        "webpack": "^5.38.1"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "github-username-regex": "^1.0.0"
+    }
 }

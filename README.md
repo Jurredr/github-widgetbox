@@ -1,2 +1,3 @@
-# github-skillbox
-✨ Generate experience-overviews for languages &amp; tools for GitHub Readme profiles.
+# github-widgetbox
+
+[✨] Beautiful, dynamic widgets for GitHub Readme profiles. (Statistics, Languages, etc.)

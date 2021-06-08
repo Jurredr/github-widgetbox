@@ -35,5 +35,5 @@ app.use('*', (req: Request, res: Response) => {
 
 // Start listening on defined port
 app.listen(process.env.PORT, () => {
-    console.log(`Github-SkillBox listening at http://localhost:${process.env.PORT}`)
+    console.log(`Github-WidgetBox listening at http://localhost:${process.env.PORT}`)
 })
