@@ -1,9 +1,20 @@
-.vercel
-.env
-node_modules
-package-lock.json
-*.lock
+# IDEs
 .vscode/
 .idea/
-coverage
+
+# Vercel
+.vercel
 vercel_token
+
+# Secrets
+.env
+
+# Node
+node_modules
+package-lock.json
+
+# Testing
+coverage
+
+# Others
+src/widgets/prototyping.svg
