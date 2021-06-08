@@ -1,36 +1,20 @@
 require('dotenv').config()
+
 import { Request, Response } from 'express'
-const { errorCard } = require('../src/cards/error-card.ts')
+const errorWidget = require('../src/widgets/error.ts')
+const routes = require('./routes.ts')
 
 // Setup express
 const express = require('express')
 const app = express()
 
-// Handle skill-box api request
-app.get('/api/', (req: Request, res: Response) => {
+// Use routing on the /api prefix
+app.use('/api', routes)
 
-    // Get the query parameters
-    const { username, languages, tools, } = req.query
-
-    // Content response-type is SVG
-    res.setHeader("Content-Type", "image/svg+xml");
-
-    // Fetch stats here
-
-    res.send(
-        'Username: ' +
-            username +
-            '<br> Languages: ' +
-            languages +
-            '<br> Tools: ' +
-            tools
-    )
-})
-
-// Send 404 for incorrect request URL
+// Send error widget for incorrect request URL
 app.use('*', (req: Request, res: Response) => {
     res.setHeader("Content-Type", "image/svg+xml");
-    res.send(errorCard('Invalid API URL'))
+    res.send(errorWidget('Invalid API URL'))
 })
 
 // Start listening on defined port
