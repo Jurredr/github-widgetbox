@@ -6,9 +6,9 @@ function errorWidget(message: string) {
             .small { font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #252525; }
             .gray { fill: #858585 }
         </style>
-            <rect x="0.5" y="0.5" width="399" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
-            <text x="25" y="45" class="text">Something went wrong!</text>
-            <text x="25" y="60" class="text small">
+        <rect x="0.5" y="0.5" width="399" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
+        <text x="25" y="45" class="text">Something went wrong!</text>
+        <text x="25" y="60" class="text small">
             <tspan x="25" dy="18">${message}</tspan>
         </text>
     </svg>

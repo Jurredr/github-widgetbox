@@ -3,16 +3,14 @@ import { Request, Response } from "express"
 const express = require('express')
 const router = express.Router()
 
+const skillsWidget = require('../../src/widgets/skills.ts')
+
 // Main route
 router.get('/', function (req: Request, res: Response) {
-    res.setHeader("Content-Type", "image/svg+xml")
-    const { username, languages, tools, } = req.query
-    res.send('Wiki home page')
-})
+    // const { username, languages, tools, } = req.query
 
-// About page route.
-router.get('/about', function (req: Request, res: Response) {
-    res.send('About this wiki')
+    res.setHeader("Content-Type", "image/svg+xml")
+    res.send(skillsWidget())
 })
 
 module.exports = router
