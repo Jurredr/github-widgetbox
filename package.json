@@ -2,9 +2,11 @@
     "name": "github-widgetbox",
     "version": "1.0.0",
     "description": "[✨] Beautiful, dynamic widgets for GitHub Readme profiles. (Statistics, Languages, etc.)",
-    "main": "index.ts",
+    "main": "public/api/index.js",
     "scripts": {
-        "dev": "nodemon api/index.ts"
+        "dev": "nodemon api/index.ts",
+        "build": "rm -rf ./public && tsc",
+        "start": "npm run build && node public/api/index.js"
     },
     "repository": {
         "type": "git",
