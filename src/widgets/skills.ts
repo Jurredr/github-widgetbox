@@ -1,7 +1,27 @@
-function skillsWidget() {
+function skillsWidget(languageString: string) {
+    const errorWidget: Function = require('./error.ts')
+    const languages: Array<string> = languageString.split(',')
+
+    if (languages === undefined) {
+        return errorWidget('Skills languages are undefined')
+    }
 
     function getBoxes() {
-        return `<rect id="lang-box1" data-name="lang-box1" width="80" height="80" rx="20" fill="url(#linear-gradient)"/>`
+        const box = `<rect id="lang-box" transform="translate($transx $transy)" data-name="lang-box1" width="80" height="80" rx="20" fill="url(#linear-gradient)"/>`
+
+        let boxes = ''
+        for (let i = 0; i < languages.length; i++) {
+            if (i > 6) {
+                boxes += box
+                    .replace('$transx', 102 * (i - 7) + '')
+                    .replace('$transy', '114')
+            } else {
+                boxes += box
+                    .replace('$transx', 102 * i + '')
+                    .replace('$transy', '0')
+            }
+        }
+        return boxes
     }
 
     return `
