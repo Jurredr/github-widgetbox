@@ -2,7 +2,8 @@
 .vscode/
 .idea/
 
-# Vercel
+# Build & deploy
+public
 .vercel
 vercel_token
 
