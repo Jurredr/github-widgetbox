@@ -1,4 +1,4 @@
-function errorWidget(message: string) {
+export default function errorWidget(message: string): string {
     return `
     <svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
         <style>
@@ -14,5 +14,3 @@ function errorWidget(message: string) {
     </svg>
   `
 }
-
-module.exports = errorWidget

@@ -1,11 +1,11 @@
 require('dotenv').config()
 
 import { Request, Response } from 'express'
-const errorWidget = require('../src/widgets/error.ts')
-const routes = require('./routes.ts')
+import errorWidget from '../src/widgets/error'
+import routes from './routes'
 
 // Setup express
-const express = require('express')
+import express from 'express'
 const app = express()
 
 // Use routing on the /api prefix

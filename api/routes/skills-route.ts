@@ -1,16 +1,17 @@
-import { Request, Response } from "express"
+import { Request, Response } from 'express'
 
-const express = require('express')
+import express from 'express'
 const router = express.Router()
 
-const skillsWidget = require('../../src/widgets/skills.ts')
+import skillsWidget from '../../src/widgets/skills'
 
 // Main route
 router.get('/', function (req: Request, res: Response) {
     const { languages } = req.query
 
-    res.setHeader("Content-Type", "image/svg+xml")
-    res.send(skillsWidget(languages))
+    res.setHeader('Content-Type', 'image/svg+xml')
+
+    res.send(skillsWidget(String(languages)))
 })
 
-module.exports = router
+export default router

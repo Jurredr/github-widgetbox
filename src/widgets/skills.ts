@@ -1,5 +1,7 @@
-function skillsWidget(languageString: string) {
-    const errorWidget: Function = require('./error.ts')
+import errorWidget from "./error"
+
+export default function skillsWidget(languageString: string): string {
+
     const languages: Array<string> = languageString.split(',')
 
     if (languages === undefined) {
@@ -57,5 +59,3 @@ function skillsWidget(languageString: string) {
     </svg>
   `
 }
-
-module.exports = skillsWidget

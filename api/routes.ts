@@ -1,7 +1,7 @@
-const express = require('express')
+import express from 'express'
 const router = express.Router()
-const skillsRoute = require('./routes/skills-route.ts')
+import skillsRoute from './routes/skills-route'
 
 router.use('/skills', skillsRoute)
 
-module.exports = router
+export default router
