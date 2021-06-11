@@ -1,12 +1,11 @@
 {
     "compilerOptions": {
         "target": "ES2018",
-        "module": "CommonJS",
+        "module": "None",
         "moduleResolution": "Node",
         "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
         "esModuleInterop": true,
         "allowJs": true,
-        "resolveJsonModule": true,
         "outDir": "public",
         "sourceMap": true,
         "strict": true,
