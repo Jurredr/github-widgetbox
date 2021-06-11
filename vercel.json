@@ -1,10 +1,15 @@
 {
     "version": 2,
-    "redirects": [
+    "builds": [
         {
-            "source": "/",
-            "destination": "https://github.com/Jurredr/github-widgetbox"
+            "src": "./api/index.js",
+            "use": "@vercel/node"
         }
     ],
-    "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
 }
