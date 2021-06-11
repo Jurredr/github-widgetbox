@@ -1,0 +1,12 @@
+{
+    "JavaScript": {
+        "colorFrom": "#FFE69F",
+        "colorTo": "#DBA343",
+        "icon": "../../assets/icons/languages/javascript.svg"
+    },
+    "TypeScript": {
+        "colorFrom": "#B7D4F8",
+        "colorTo": "#4179C1",
+        "icon": "../../assets/icons/languages/typescript.svg"
+    }
+}
