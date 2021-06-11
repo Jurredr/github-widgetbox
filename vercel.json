@@ -1,3 +1,9 @@
 {
-    "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+    "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "https://github.com/Jurredr/github-widgetbox"
+        }
+    ]
 }
