@@ -1,5 +1,6 @@
 import buildCard from '../components/card'
 import buildGradientBox from '../components/gradient-box'
+import { find } from '../data/languages'
 import errorWidget from './error'
 
 export default function skillsWidget(languageString: string): string {
@@ -14,10 +15,32 @@ export default function skillsWidget(languageString: string): string {
     function getBoxes() {
         let boxes = ''
         for (let i = 0; i < languages.length; i++) {
+            let foundData = find(languages[i])
+            if (foundData === undefined) {
+                foundData = {
+                    name: 'None',
+                    colorFrom: '#FFFFFF',
+                    colorTo: '#808080',
+                    icon: 'Undefined',
+                }
+            }
+
             if (i > 6) {
-                boxes += buildGradientBox(i, '#FFF', 'gray', 102 * (i - 7), 114)
+                boxes += buildGradientBox(
+                    i,
+                    foundData.colorFrom,
+                    foundData.colorTo,
+                    102 * (i - 7),
+                    114
+                )
             } else {
-                boxes += buildGradientBox(i, '#FFF', 'gray', 102 * i, 0)
+                boxes += buildGradientBox(
+                    i,
+                    foundData.colorFrom,
+                    foundData.colorTo,
+                    102 * i,
+                    0
+                )
             }
         }
         return boxes
