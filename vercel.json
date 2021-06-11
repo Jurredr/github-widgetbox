@@ -1,3 +1,15 @@
 {
-    "version": 2
+    "version": 2,
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "https://github.com/Jurredr/github-widgetbox"
+        }
+    ]
 }
