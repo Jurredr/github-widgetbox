@@ -13,6 +13,6 @@ export default function buildCard(
                 </filter>
             </defs>
             <g id="card" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Card)">
-                <rect id="Card" data-name="Card" width="${width}" height="${height}" rx="30" transform="translate(15 12)" fill="${bg}"/>
+                <rect id="Card" data-name="Card" width="${width-30}" height="${height-30}" rx="30" transform="translate(15 12)" fill="${bg}"/>
             </g>`
 }

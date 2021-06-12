@@ -22,32 +22,36 @@ export default function skillsWidget(languageString: string): string {
                     colorFrom: '#FFFFFF',
                     colorTo: '#808080',
                     icon: 'Undefined',
+                    width: -1,
+                    height: -1,
                 }
             }
 
-            if (i > 6) {
-                boxes += buildGradientBox(
-                    i,
-                    foundData.colorFrom,
-                    foundData.colorTo,
-                    102 * (i - 7),
-                    114
-                )
-            } else {
-                boxes += buildGradientBox(
-                    i,
-                    foundData.colorFrom,
-                    foundData.colorTo,
-                    102 * i,
-                    0
-                )
-            }
+            const transX = i > 6 ? 102 * (i - 7) : 102 * i
+            const transY = i > 6 ? 114 : 0
+
+            boxes += buildGradientBox(
+                i,
+                foundData.colorFrom,
+                foundData.colorTo,
+                transX,
+                transY
+            )
+
+            boxes +=
+                foundData.icon != 'Undefined'
+                    ? `<g transform="translate(${
+                          transX + (80 - foundData.width) / 2
+                      } ${transY + (80 - foundData.height) / 2})">` +
+                      foundData.icon +
+                      '</g>'
+                    : ''
         }
         return boxes
     }
 
     return `
-    <svg width="842" height="468" viewBox="0 0 ${width} ${height}"
+    <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"
     xmlns="http://www.w3.org/2000/svg">
         ${buildCard(width, height, '#FFFFFF')}
         <g id="header-text" transform="translate(60 60)">
