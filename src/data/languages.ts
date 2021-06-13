@@ -1,5 +1,5 @@
 export function find(name: string): {
-    name: string
+    name: Array<string>
     colorFrom: string
     colorTo: string
     icon: string
@@ -7,13 +7,13 @@ export function find(name: string): {
     height: number
 } {
     return languages.filter(function (languages) {
-        return languages.name.toUpperCase() == name.toUpperCase()
+        return languages.name.map(language => language.toUpperCase()).includes(name.toUpperCase())
     })[0]
 }
 
 const languages = [
     {
-        name: 'JavaScript',
+        name: ['JavaScript', 'JS'],
         colorFrom: '#FFE69F',
         colorTo: '#DBA343',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
@@ -23,7 +23,7 @@ const languages = [
         height: 36,
     },
     {
-        name: 'TypeScript',
+        name: ['TypeScript', 'TS'],
         colorFrom: '#B7D4F8',
         colorTo: '#4179C1',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
