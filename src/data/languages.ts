@@ -76,6 +76,16 @@ const languages = [
         width: 36,
         height: 36,
     },
+    {
+        name: ['HTML', 'HTML5'],
+        colorFrom: '#FDBAA2',
+        colorTo: '#F1652A',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="30.857" height="36" viewBox="0 0 30.857 36">
+        <path id="Icon_ionic-logo-html5" data-name="Icon ionic-logo-html5" fill="#FFFFFF" d="M4.5,2.25l2.807,32.4,12.6,3.6,12.636-3.6,2.811-32.4ZM29.25,12.857H14.464l.321,4.1H28.928L27.843,29.12l-7.915,2.258L12,29.13,11.455,22.9h3.878l.275,3.157,4.321,1.188,4.293-1.2.448-5.155H11.249L10.239,8.872H29.588Z" transform="translate(-4.5 -2.25)"/>
+        </svg>`,
+        width: 30.86,
+        height: 36,
+    },
 ]
 
 export default languages
