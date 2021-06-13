@@ -4,9 +4,8 @@ export function isValidHexColor(hexColor: string): boolean {
     ).test(hexColor)
 }
 
-export function parseStringToArray(str: string, delimiter: string): Array<string> {
-    if (!str) return []
-    return str.split(delimiter)
+export function getBoolean(str: string): boolean {
+    return str.toLowerCase() === 'true'
 }
 
 // TODO: nice implementation of util for GitHub API requests

@@ -3,9 +3,14 @@ import buildGradientBox from '../components/gradient-box'
 import { find } from '../data/languages'
 import errorWidget from './error'
 
-export default function skillsWidget(languageString: string): string {
+export default function skillsWidget(languageString: string, includeNames: boolean): string {
     const width = 842
     const height = 468
+
+    if (languageString === 'undefined') {
+        return errorWidget('Skills languages are undefined')
+    }
+
     const languages: Array<string> = languageString.split(',')
 
     if (languages === undefined) {
@@ -22,7 +27,7 @@ export default function skillsWidget(languageString: string): string {
                     name: ['None'],
                     colorFrom: '#FFFFFF',
                     colorTo: '#808080',
-                    icon: 'Undefined',
+                    icon: 'undefined',
                     width: -1,
                     height: -1,
                 }
@@ -47,6 +52,15 @@ export default function skillsWidget(languageString: string): string {
                       foundData.icon +
                       '</g>'
                     : ''
+
+            if (includeNames) {
+                 boxes +=
+                 `<g id="header-text" transform="translate(${transX + (80 - foundData.name[0].length * 7.5) / 2.3} 60)">
+                    <text id="Skills" fill="${foundData.colorTo}" transform="translate(0 44)" font-size="16" font-family="Roboto-Light, Roboto" font-weight="300">
+                        <tspan x="0" y="0">${foundData.name[0]}</tspan>
+                    </text>
+                </g>`
+            }
         }
         return boxes
     }
