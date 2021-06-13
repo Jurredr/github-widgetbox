@@ -15,6 +15,7 @@ export default function skillsWidget(languageString: string): string {
     function getBoxes() {
         let boxes = ''
         for (let i = 0; i < languages.length; i++) {
+            if (i > 13) break
             let foundData = find(languages[i])
             if (foundData === undefined) {
                 foundData = {
