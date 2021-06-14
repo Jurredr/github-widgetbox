@@ -12,6 +12,5 @@
             "src": "/(.+)",
             "dest": "api/index.js"
         }
-    ],
-    "cleanUrls": true
+    ]
 }
