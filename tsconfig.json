@@ -17,5 +17,6 @@
         },
         "types": ["dotenv", "express", "node"]
     },
-    "exclude": ["node_modules", "./public/**/*"]
+    "exclude": ["node_modules", "./public/**/*"],
+    "include": ["api/**/*", "public/**/*"]
 }

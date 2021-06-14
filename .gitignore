@@ -3,7 +3,6 @@
 .idea/
 
 # Build & deploy
-public
 .vercel
 vercel_token
 
