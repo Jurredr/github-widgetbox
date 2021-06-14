@@ -19,7 +19,7 @@ export default function skillsWidget(
     }
 
     const width = 812
-    const height = 354 + 114 * Math.floor(languages.length / 7)
+    const height = 344 + 114 * Math.floor(languages.length / 7) + (includeNames ? (Math.floor(languages.length / 7) + 1) * 25 : 0)
 
     function getBoxes() {
         let boxes = ''
@@ -36,8 +36,9 @@ export default function skillsWidget(
                 }
             }
 
-            const transX = 102 * (i - Math.floor(i / 7) * 7)
-            const transY = 114 * Math.floor(i / 7)
+            const row = Math.floor(i / 7)
+            const transX = 102 * (i - row * 7)
+            const transY = 114 * row + (includeNames && row > 0 ? 25 : 0)
 
             boxes += buildGradientBox(
                 i,
@@ -59,7 +60,7 @@ export default function skillsWidget(
             if (includeNames) {
                 boxes += `<g id="header-text" transform="translate(${
                     transX + (80 - foundData.name[0].length * 7.5) / 2.3
-                } 60)">
+                } ${60 + 140 * row})">
                     <text id="Skills" fill="${
                         foundData.colorTo
                     }" transform="translate(0 44)" font-size="16" font-family="Roboto-Light, Roboto" font-weight="300">
