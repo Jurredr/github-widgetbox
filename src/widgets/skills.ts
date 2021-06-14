@@ -3,9 +3,10 @@ import buildGradientBox from '../components/gradient-box'
 import { find } from '../data/languages'
 import errorWidget from './error'
 
-export default function skillsWidget(languageString: string, includeNames: boolean): string {
-    const width = 842
-    const height = 468
+export default function skillsWidget(
+    languageString: string,
+    includeNames: boolean
+): string {
 
     if (languageString === 'undefined') {
         return errorWidget('Skills languages are undefined')
@@ -17,10 +18,12 @@ export default function skillsWidget(languageString: string, includeNames: boole
         return errorWidget('Skills languages are undefined')
     }
 
+    const width = 842
+    const height = 354 + 114 * Math.floor(languages.length / 7)
+
     function getBoxes() {
         let boxes = ''
         for (let i = 0; i < languages.length; i++) {
-            if (i > 13) break
             let foundData = find(languages[i])
             if (foundData === undefined) {
                 foundData = {
@@ -33,8 +36,8 @@ export default function skillsWidget(languageString: string, includeNames: boole
                 }
             }
 
-            const transX = i > 6 ? 102 * (i - 7) : 102 * i
-            const transY = i > 6 ? 114 : 0
+            const transX = 102 * (i - Math.floor(i / 7) * 7)
+            const transY = 114 * Math.floor(i / 7)
 
             boxes += buildGradientBox(
                 i,
@@ -54,9 +57,12 @@ export default function skillsWidget(languageString: string, includeNames: boole
                     : ''
 
             if (includeNames) {
-                 boxes +=
-                 `<g id="header-text" transform="translate(${transX + (80 - foundData.name[0].length * 7.5) / 2.3} 60)">
-                    <text id="Skills" fill="${foundData.colorTo}" transform="translate(0 44)" font-size="16" font-family="Roboto-Light, Roboto" font-weight="300">
+                boxes += `<g id="header-text" transform="translate(${
+                    transX + (80 - foundData.name[0].length * 7.5) / 2.3
+                } 60)">
+                    <text id="Skills" fill="${
+                        foundData.colorTo
+                    }" transform="translate(0 44)" font-size="16" font-family="Roboto-Light, Roboto" font-weight="300">
                         <tspan x="0" y="0">${foundData.name[0]}</tspan>
                     </text>
                 </g>`
