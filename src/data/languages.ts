@@ -190,7 +190,7 @@ const languages = [
         height: 36,
     },
     {
-        name: ['GO', 'Golang'],
+        name: ['Go', 'Golang'],
         colorFrom: '#70D0ED',
         colorTo: '#00CDBF',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="46" height="18" viewBox="0 0 46 18">
