@@ -209,6 +209,16 @@ const languages = [
         width: 22,
         height: 36,
     },
+    {
+        name: ['Elm'],
+        colorFrom: '#BDFE94',
+        colorTo: '#F4AC21',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+        <path id="Elm-logo" fill="#FFFFFF" d="M-1825.38-651.962l16.068-16.067,16.068,16.067Zm25.939-8.061,7.128-7.127v14.255Zm-26.872-25.007,16.068,16.067-16.068,16.068Zm17.932,16.067,8.044-8.044,8.007,8.007-8.044,8.044Zm-8.281-8.28h14.7l-7.347,7.348Zm9.233-8.72h15.115v15.115Zm-10.551,7.4-7.4-7.4h16.087l7.4,7.4Z" transform="translate(1826.312 685.962)"/>
+        </svg>`,
+        width: 34,
+        height: 34,
+    },
 ]
 
 export default languages
