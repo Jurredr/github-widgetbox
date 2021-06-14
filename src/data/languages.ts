@@ -164,10 +164,20 @@ const languages = [
         colorFrom: '#875EFD',
         colorTo: '#F24692',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
-        <path id="Kotlin-logo" d="M1.95,36,18.9,18.75,36,36ZM0,0H18L0,18.75ZM20.1,0,0,21V36L18,18,36,0Z" fill="#fff"/>
+        <path id="Kotlin-logo" fill="#FFFFFF" d="M1.95,36,18.9,18.75,36,36ZM0,0H18L0,18.75ZM20.1,0,0,21V36L18,18,36,0Z"/>
         </svg>`,
         width: 36,
         height: 36,
+    },
+    {
+        name: ['Erlang'],
+        colorFrom: '#FF96AC',
+        colorTo: '#E43C41',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" viewBox="0 0 40 26">
+        <path id="Erlang-logo" fill="#FFFFFF" d="M5.45,3.762H0V29.755H6.275A19.653,19.653,0,0,1,1.356,16.142,19.4,19.4,0,0,1,5.45,3.762Zm14.887.623a5.6,5.6,0,0,0-5.575,5.34H25.381c-.069-3.19-2.156-5.333-5.044-5.34Zm14.419-.616h.019l-.006-.006Zm.019,0A16.527,16.527,0,0,1,37.663,14.21a12.267,12.267,0,0,1,0,1.547H14.388c-.013,7.041,2.431,12.509,8.663,12.535,4.281-.019,7.375-3.273,9.494-6.81l6.025,3.094a26.984,26.984,0,0,1-3.619,5.186H40V3.768Z" transform="translate(0 -3.762)"/>
+        </svg>`,
+        width: 40,
+        height: 26,
     },
 ]
 
