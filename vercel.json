@@ -2,15 +2,15 @@
     "rewrites": [
         {
             "source": "/api/(.*)",
-            "destination": "public/api/index.js"
+            "destination": "api/index.js"
         },
         {
             "source": "/",
-            "destination": "public/api/index.js"
+            "destination": "api/index.js"
         },
         {
             "source": "/(.+)",
-            "destination": "public/api/index.js"
+            "destination": "api/index.js"
         }
     ],
     "redirects": [
