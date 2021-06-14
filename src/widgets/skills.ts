@@ -18,7 +18,7 @@ export default function skillsWidget(
         return errorWidget('Skills languages are undefined')
     }
 
-    const width = 842
+    const width = 812
     const height = 354 + 114 * Math.floor(languages.length / 7)
 
     function getBoxes() {
