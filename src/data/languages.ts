@@ -110,7 +110,7 @@ const languages = [
         height: 40,
     },
     {
-        name: ['CPP'],
+        name: ['C++', 'CPP'],
         colorFrom: '#97C9FF',
         colorTo: '#1D6AAE',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 40">
@@ -120,7 +120,7 @@ const languages = [
         height: 40,
     },
     {
-        name: ['CSharp'],
+        name: ['C#', 'CSharp'],
         colorFrom: '#ECA5F3',
         colorTo: '#953B9F',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 40">

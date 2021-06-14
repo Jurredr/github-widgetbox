@@ -19,7 +19,7 @@ export default function skillsWidget(
     }
 
     const width = 812
-    const height = 344 + 114 * Math.floor(languages.length / 7) + (includeNames ? (Math.floor(languages.length / 7) + 1) * 25 : 0)
+    const height = 344 + 114 * Math.floor((languages.length - 0.1) / 7) + (includeNames ? (Math.floor((languages.length - 0.1) / 7) + 1) * 25 : 0)
 
     function getBoxes() {
         let boxes = ''
@@ -38,7 +38,7 @@ export default function skillsWidget(
 
             const row = Math.floor(i / 7)
             const transX = 102 * (i - row * 7)
-            const transY = 114 * row + (includeNames && row > 0 ? 25 : 0)
+            const transY = 114 * row + (includeNames && row > 0 ? 25 * row : 0)
 
             boxes += buildGradientBox(
                 i,
@@ -57,6 +57,7 @@ export default function skillsWidget(
                       '</g>'
                     : ''
 
+            // TODO: Center names in a better way
             if (includeNames) {
                 boxes += `<g id="header-text" transform="translate(${
                     transX + (80 - foundData.name[0].length * 7.5) / 2.3
