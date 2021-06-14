@@ -6,18 +6,21 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [
+    "rewrites": [
         {
-            "src": "/api/(.*)",
-            "dest": "public/api/index.js"
+            "source": "/api/(.*)",
+            "destination": "public/api/index.js"
         },
         {
-            "src": "/",
-            "dest": "https://github.com/Jurredr/github-widgetbox"
-        },
-        {
-            "src": "/(.+)",
-            "dest": "public/api/index.js"
+            "source": "/(.+)",
+            "destination": "public/api/index.js"
         }
-    ]
+    ],
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "https://github.com/Jurredr/github-widgetbox"
+        }
+    ],
+    "cleanUrls": true
 }
