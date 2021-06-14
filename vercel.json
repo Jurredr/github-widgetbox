@@ -13,11 +13,11 @@
         },
         {
             "src": "/",
-            "dest": "public/aapi/index.js"
+            "dest": "https://github.com/Jurredr/github-widgetbox"
         },
         {
             "src": "/(.+)",
-            "dest": "public/aapi/index.js"
+            "dest": "public/api/index.js"
         }
     ]
 }
