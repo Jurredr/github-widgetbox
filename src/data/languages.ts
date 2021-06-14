@@ -159,6 +159,16 @@ const languages = [
         width: 36,
         height: 36,
     },
+    {
+        name: ['Kotlin'],
+        colorFrom: '#875EFD',
+        colorTo: '#F24692',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+        <path id="Kotlin-logo" d="M1.95,36,18.9,18.75,36,36ZM0,0H18L0,18.75ZM20.1,0,0,21V36L18,18,36,0Z" fill="#fff"/>
+        </svg>`,
+        width: 36,
+        height: 36,
+    },
 ]
 
 export default languages
