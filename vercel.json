@@ -6,11 +6,11 @@
         },
         {
             "source": "/",
-            "status": 404
+            "destination": "api/index.js"
         },
         {
             "source": "/(.+)",
-            "status": 404
+            "destination": "api/index.js"
         }
     ],
     "redirects": [
