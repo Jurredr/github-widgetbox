@@ -1,6 +1,6 @@
 # github-widgetbox
 
-[✨] Beautiful, dynamic widgets for GitHub Readme profiles. (Statistics, Languages, etc.)
+[✨] Beautiful, dynamic widgets for GitHub Readme pages. (Statistics, Languages, etc.)
 
 ## Widgets
 ### Skills
