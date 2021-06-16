@@ -27,7 +27,7 @@ export default function skillsWidget(
             let foundData = find(languages[i])
             if (foundData === undefined) {
                 foundData = {
-                    name: ['None'],
+                    name: [''],
                     colorFrom: '#FFFFFF',
                     colorTo: '#808080',
                     icon: 'undefined',
