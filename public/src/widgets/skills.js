@@ -23,7 +23,7 @@ function skillsWidget(languageString, includeNames) {
             let foundData = languages_1.find(languages[i]);
             if (foundData === undefined) {
                 foundData = {
-                    name: ['None'],
+                    name: [''],
                     colorFrom: '#FFFFFF',
                     colorTo: '#808080',
                     icon: 'undefined',
