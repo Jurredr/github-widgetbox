@@ -259,6 +259,16 @@ const languages = [
         width: 36,
         height: 36,
     },
+    {
+        name: ['YAML', 'YML'],
+        colorFrom: '#FFC5AF',
+        colorTo: '#E05128',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32">
+        <path id="yaml-logo" fill="#FFFFFF" d="M-1666.24-1406.59v-14.99h4.191l3.579,6.779,3.758-6.779h4.235v14.987h-3.1v-10.582l-3.5,7.195h-2.546l-3.384-6.95v10.34Zm17.755-.068v-14.925h3.294v11.736h7.954v3.19Zm0-16.6-1.172-3.4h-6.962l-1.417,3.4h-3.083l6.52-15.3h3.155l6.255,15.3Zm-6.844-6.455h4.516l-2.135-5.613Zm-10.91,6.419v-5.934l-6-9.361h4.325l3.811,6.027,3.844-6.027h4.139l-6.277,9.361v5.934Z" transform="translate(1672.236 1438.59)"/>
+        </svg>`,
+        width: 35,
+        height: 32,
+    },
 ]
 
 export default languages
