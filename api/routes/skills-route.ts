@@ -6,7 +6,7 @@ const router = express.Router()
 import skillsWidget from '../../src/widgets/skills'
 import { getBoolean } from '../../src/utils'
 
-// Main route
+// Primary skills route
 router.get('/', function (req: Request, res: Response) {
     const { languages, includeNames } = req.query
 
