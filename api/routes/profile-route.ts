@@ -13,7 +13,7 @@ router.get('/', function (req: Request, res: Response) {
     res.setHeader('Content-Type', 'image/svg+xml')
 
     if (username === undefined) {
-        res.send(errorWidget('Profile', 'Username is not defined!'))
+        res.send(errorWidget('Profile', '-25%', 'Username is undefined!', '-26%'))
         return
     }
 
