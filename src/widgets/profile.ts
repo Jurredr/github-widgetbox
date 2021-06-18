@@ -5,7 +5,7 @@ export default function profileWidget(username: string): Promise<String> {
     try {
         const profile = axios.get('https://api.github.com/users/' + username)
 
-        return Promise.all([profile]).then((results) => {
+        return Promise.all([profile]).then((response) => {
             return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="842" height="165" viewBox="0 0 842 165">
                 <defs>
                 <filter id="card" x="0" y="0" width="842" height="165" filterUnits="userSpaceOnUse">
@@ -24,8 +24,8 @@ export default function profileWidget(username: string): Promise<String> {
                     <rect id="card-2" data-name="card" width="812" height="135" rx="30" transform="translate(15 12)" fill="#fff"/>
                 </g>
                 <rect id="profile-image" width="65" height="65" rx="30" transform="translate(1422 2053)" fill="url(#pattern)"/>
-                <text id="Jurre_de_Ruiter" data-name="Jurre de Ruiter" transform="translate(1515 2084)" font-size="26" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Jurre de Ruiter</tspan></text>
-                <text id="GitHub.com_Jurredr" data-name="GitHub.com/Jurredr" transform="translate(1515 2108)" fill="#bfbfbf" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">GitHub.com/Jurredr</tspan></text>
+                <text id="text-name" data-name="text-name" transform="translate(1515 2084)" font-size="26" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">${response[0].data.name}</tspan></text>
+                <text id="text-url" data-name="text-url" transform="translate(1515 2108)" fill="#bfbfbf" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">GitHub.com/${username}</tspan></text>
                 <g id="stars" transform="translate(41 -6)">
                     <rect id="stars-box" width="90" height="37" rx="18.5" transform="translate(2019 2073)" fill="#ffefd1"/>
                     <text id="_24" data-name="24" transform="translate(2067.486 2098)" fill="orange" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">24</tspan></text>
