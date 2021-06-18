@@ -17,7 +17,9 @@ router.get('/', function (req: Request, res: Response) {
         return
     }
 
-    res.send(profileWidget(String(username)))
+    profileWidget(String(username)).then(response => {
+        res.send(response)
+    })
 })
 
 export default router
