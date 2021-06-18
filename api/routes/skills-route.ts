@@ -10,7 +10,10 @@ import { getBoolean } from '../../src/utils'
 router.get('/', function (req: Request, res: Response) {
     const { languages, includeNames } = req.query
 
+    // Set the header's type to svg/xml
     res.setHeader('Content-Type', 'image/svg+xml')
+
+    // Grab the Skills widget
     res.send(skillsWidget(String(languages), getBoolean(String(includeNames))))
 })
 
