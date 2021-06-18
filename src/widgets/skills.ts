@@ -62,7 +62,7 @@ export default function skillsWidget(
                 boxes += `<g id="header-text" transform="translate(${
                     transX + (80 - foundData.name[0].length * 7.5) / 2.3
                 } ${60 + 140 * row})">
-                    <text id="Skills" fill="${
+                    <text id="skills" fill="${
                         foundData.colorTo
                     }" transform="translate(0 44)" font-size="16" font-family="Roboto-Light, Roboto" font-weight="300">
                         <tspan x="0" y="0">${foundData.name[0]}</tspan>
@@ -78,10 +78,10 @@ export default function skillsWidget(
     xmlns="http://www.w3.org/2000/svg">
         ${buildCard(width, height, '#FFFFFF')}
         <g id="header-text" transform="translate(60 60)">
-            <text id="Skills" transform="translate(0 44)" font-size="42" font-family="Roboto-Medium, Roboto" font-weight="500">
+            <text id="skills" transform="translate(0 44)" font-size="42" font-family="Roboto-Medium, Roboto" font-weight="500">
                 <tspan x="0" y="0">Skills</tspan>
             </text>
-            <text id="Languages" transform="translate(0 83)" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto">
+            <text id="languages" transform="translate(0 83)" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto">
                 <tspan x="0" y="0">Languages</tspan>
             </text>
         </g>

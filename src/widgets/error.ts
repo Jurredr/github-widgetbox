@@ -17,7 +17,7 @@ export default function errorWidget(widgetName: string, nameX: string, reason: s
             <feComposite in="SourceGraphic"/>
         </filter>
     </defs>
-    <g id="Error-card" transform="translate(-187 -87)">
+    <g id="error-card" transform="translate(-187 -87)">
         <g transform="matrix(1, 0, 0, 1, 187, 87)" filter="url(#card-bottom)">
             <path id="card-bottom-2" data-name="card-bottom" d="M0,0H453a0,0,0,0,1,0,0V57a30,30,0,0,1-30,30H30A30,30,0,0,1,0,57V0A0,0,0,0,1,0,0Z" transform="translate(15 321)" fill="#ff4951"/>
         </g>
