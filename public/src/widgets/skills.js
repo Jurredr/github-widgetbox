@@ -9,11 +9,11 @@ const languages_1 = require("../data/languages");
 const error_1 = __importDefault(require("./error"));
 function skillsWidget(languageString, includeNames) {
     if (languageString === 'undefined') {
-        return error_1.default('Skills languages are undefined');
+        return error_1.default('Skills', '-24%', 'Languages are undefined!', '-28%');
     }
     const languages = languageString.split(',');
     if (languages === undefined) {
-        return error_1.default('Skills languages are undefined');
+        return error_1.default('Skills', '-24%', 'Languages are undefined!', '-28%');
     }
     const width = 812;
     const height = 344 + 114 * Math.floor((languages.length - 0.1) / 7) + (includeNames ? (Math.floor((languages.length - 0.1) / 7) + 1) * 25 : 0);
@@ -44,7 +44,7 @@ function skillsWidget(languageString, includeNames) {
             // TODO: Center names in a better way
             if (includeNames) {
                 boxes += `<g id="header-text" transform="translate(${transX + (80 - foundData.name[0].length * 7.5) / 2.3} ${60 + 140 * row})">
-                    <text id="Skills" fill="${foundData.colorTo}" transform="translate(0 44)" font-size="16" font-family="Roboto-Light, Roboto" font-weight="300">
+                    <text id="skills" fill="${foundData.colorTo}" transform="translate(0 44)" font-size="16" font-family="Roboto-Light, Roboto" font-weight="300">
                         <tspan x="0" y="0">${foundData.name[0]}</tspan>
                     </text>
                 </g>`;
@@ -57,10 +57,10 @@ function skillsWidget(languageString, includeNames) {
     xmlns="http://www.w3.org/2000/svg">
         ${card_1.default(width, height, '#FFFFFF')}
         <g id="header-text" transform="translate(60 60)">
-            <text id="Skills" transform="translate(0 44)" font-size="42" font-family="Roboto-Medium, Roboto" font-weight="500">
+            <text id="skills" transform="translate(0 44)" font-size="42" font-family="Roboto-Medium, Roboto" font-weight="500">
                 <tspan x="0" y="0">Skills</tspan>
             </text>
-            <text id="Languages" transform="translate(0 83)" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto">
+            <text id="languages" transform="translate(0 83)" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto">
                 <tspan x="0" y="0">Languages</tspan>
             </text>
         </g>

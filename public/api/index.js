@@ -14,7 +14,7 @@ app.use('/api', routes_1.default);
 // Send error widget for incorrect request URL
 app.use('*', (req, res) => {
     res.setHeader("Content-Type", "image/svg+xml");
-    res.send(error_1.default('Invalid API URL'));
+    res.send(error_1.default('Unknown', '-28%', 'Invalid API URL!', '-19%'));
 });
 // Start listening on defined port
 app.listen(process.env.PORT, () => {
