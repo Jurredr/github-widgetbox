@@ -1,7 +1,7 @@
 {
     "name": "github-widgetbox",
     "version": "1.0.0",
-    "description": "[✨] Beautiful, dynamic widgets for GitHub Readme profiles. (Statistics, Languages, etc.)",
+    "description": "[✨] Beautiful, dynamic widgets for GitHub Readme pages. (Statistics, Languages, etc.)",
     "main": "public/api/index.js",
     "scripts": {
         "dev": "nodemon api/index.ts",
