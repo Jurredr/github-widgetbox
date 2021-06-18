@@ -31,7 +31,7 @@ export default function profileWidget(username: string): Promise<String> {
                                     <text id="text-url" data-name="text-url" transform="translate(1515 2108)" fill="#bfbfbf" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">GitHub.com/${username}</tspan></text>
                                     <g id="stars" transform="translate(41 -6)">
                                         <rect id="stars-box" width="90" height="37" rx="18.5" transform="translate(2019 2073)" fill="#ffefd1"/>
-                                        <text id="_24" data-name="24" transform="translate(2067.486 2098)" fill="orange" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">24</tspan></text>
+                                        <text id="_24" data-name="24" transform="translate(2067.486 2098)" fill="orange" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">10</tspan></text>
                                         <path id="stars-icon" d="M9.6.608,7.369,5.131l-4.992.728a1.094,1.094,0,0,0-.6,1.865l3.611,3.519L4.53,16.215a1.093,1.093,0,0,0,1.585,1.151l4.465-2.347,4.465,2.347a1.094,1.094,0,0,0,1.585-1.151l-.854-4.971,3.611-3.519a1.094,1.094,0,0,0-.6-1.865l-4.992-.728L11.561.608A1.094,1.094,0,0,0,9.6.608Z" transform="translate(2041.073 2082.753)" fill="orange"/>
                                     </g>
                                     <g id="followers" transform="translate(1474 1672)">
