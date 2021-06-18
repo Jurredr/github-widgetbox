@@ -1,7 +1,6 @@
 import axios from 'axios'
 
 export default function profileWidget(username: string): string {
-
     try {
         const profile = axios.get('https://api.github.com/users/' + username)
 

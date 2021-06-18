@@ -9,13 +9,13 @@ export default function skillsWidget(
 ): string {
 
     if (languageString === 'undefined') {
-        return errorWidget('Skills languages are undefined')
+        return errorWidget('Skills', 'Languages are undefined')
     }
 
     const languages: Array<string> = languageString.split(',')
 
     if (languages === undefined) {
-        return errorWidget('Skills languages are undefined')
+        return errorWidget('Skills', 'Languages are undefined')
     }
 
     const width = 812
