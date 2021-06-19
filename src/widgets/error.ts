@@ -1,4 +1,9 @@
-export default function errorWidget(widgetName: string, nameX: string, reason: string, reasonX: string): string {
+export default function errorWidget(
+    widgetName: string,
+    nameX: string,
+    reason: string,
+    reasonX: string
+): string {
     return `<svg xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" width="483" height="426" viewBox="0 0 483 426">
     <defs>
