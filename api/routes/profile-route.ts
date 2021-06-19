@@ -39,7 +39,7 @@ router.get('/', function (req: Request, res: Response) {
     }
 
     // Grab the Profile widget
-    profileWidget(String(username)).then((response) => {
+    profileWidget(String(username), String(data)).then((response) => {
         if (response === undefined || response === null) {
             res.send(
                 errorWidget('Profile', '-25%', 'GitHub API-call error!', '-24%')

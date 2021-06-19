@@ -2,7 +2,18 @@ import axios from 'axios'
 import { requestInBase64 } from '../utils'
 import errorWidget from './error'
 
-export default function profileWidget(username: string): Promise<String> {
+export default function profileWidget(
+    username: string,
+    data: string
+): Promise<String> {
+    const dataOptions: Array<string> = data.split(',')
+
+    if (dataOptions === undefined) {
+        return new Promise(() => {
+            errorWidget('Profile', '-25%', 'Data option is missing!', '-25%')
+        })
+    }
+
     try {
         return axios
             .get('https://api.github.com/users/' + username)
