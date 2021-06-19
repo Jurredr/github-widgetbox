@@ -10,10 +10,10 @@ const error_1 = __importDefault(require("../../src/widgets/error"));
 const githubUsernameRegex = require("github-username-regex");
 // Primary profile route
 router.get('/', function (req, res) {
-    const { username } = req.query;
+    const { username, data } = req.query;
     // Set the header's type to svg/xml
     res.setHeader('Content-Type', 'image/svg+xml');
-    // Check if argument is not present
+    // Check if username argument is not present
     if (username === undefined || username === null) {
         res.send(error_1.default('Profile', '-25%', 'Username is undefined!', '-26%'));
         return;
@@ -23,8 +23,13 @@ router.get('/', function (req, res) {
         res.send(error_1.default('Profile', '-25%', 'Username is invalid!', '-22%'));
         return;
     }
+    // Check if data argument is not present
+    if (data === undefined || data === null) {
+        res.send(error_1.default('Profile', '-25%', 'Data option is missing!', '-25%'));
+        return;
+    }
     // Grab the Profile widget
-    profile_1.default(String(username)).then((response) => {
+    profile_1.default(String(username), String(data)).then((response) => {
         if (response === undefined || response === null) {
             res.send(error_1.default('Profile', '-25%', 'GitHub API-call error!', '-24%'));
         }
