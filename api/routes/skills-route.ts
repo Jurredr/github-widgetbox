@@ -5,6 +5,7 @@ const router = express.Router()
 
 import skillsWidget from '../../src/widgets/skills'
 import { getBoolean } from '../../src/utils'
+import errorWidget from '../../src/widgets/error'
 
 // Primary skills route
 router.get('/', function (req: Request, res: Response) {
@@ -12,6 +13,14 @@ router.get('/', function (req: Request, res: Response) {
 
     // Set the header's type to svg/xml
     res.setHeader('Content-Type', 'image/svg+xml')
+
+    // Check if languages argument is not present
+    if (languages === undefined || languages === null) {
+        res.send(
+            errorWidget('Skills', '-24%', 'Languages are undefined!', '-28%')
+        )
+        return
+    }
 
     // Grab the Skills widget
     res.send(skillsWidget(String(languages), getBoolean(String(includeNames))))

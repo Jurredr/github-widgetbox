@@ -7,11 +7,6 @@ export default function skillsWidget(
     languageString: string,
     includeNames: boolean
 ): string {
-
-    if (languageString === 'undefined') {
-        return errorWidget('Skills', '-24%', 'Languages are undefined!', '-28%')
-    }
-
     const languages: Array<string> = languageString.split(',')
 
     if (languages === undefined) {
@@ -19,7 +14,10 @@ export default function skillsWidget(
     }
 
     const width = 812
-    const height = 344 + 114 * Math.floor((languages.length - 0.1) / 7) + (includeNames ? (Math.floor((languages.length - 0.1) / 7) + 1) * 25 : 0)
+    const height =
+        344 +
+        114 * Math.floor((languages.length - 0.1) / 7) +
+        (includeNames ? (Math.floor((languages.length - 0.1) / 7) + 1) * 25 : 0)
 
     function getBoxes() {
         let boxes = ''
