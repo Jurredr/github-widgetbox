@@ -9,12 +9,12 @@ const githubUsernameRegex = require("github-username-regex")
 
 // Primary profile route
 router.get('/', function (req: Request, res: Response) {
-    const { username } = req.query
+    const { username, data } = req.query
 
     // Set the header's type to svg/xml
     res.setHeader('Content-Type', 'image/svg+xml')
 
-    // Check if argument is not present
+    // Check if username argument is not present
     if (username === undefined || username === null) {
         res.send(
             errorWidget('Profile', '-25%', 'Username is undefined!', '-26%')
@@ -26,6 +26,14 @@ router.get('/', function (req: Request, res: Response) {
     if (!githubUsernameRegex.test(username)) {
         res.send(
             errorWidget('Profile', '-25%', 'Username is invalid!', '-22%')
+        )
+        return
+    }
+
+    // Check if data argument is not present
+    if (data === undefined || data === null) {
+        res.send(
+            errorWidget('Profile', '-25%', 'Data option is missing!', '-25%')
         )
         return
     }
