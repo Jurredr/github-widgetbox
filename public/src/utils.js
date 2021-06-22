@@ -14,8 +14,7 @@ function getBoolean(str) {
 }
 exports.getBoolean = getBoolean;
 async function requestInBase64(url) {
-    const response = await axios_1.default
-        .get(url, {
+    const response = await axios_1.default.get(url, {
         responseType: 'arraybuffer',
     });
     return Buffer.from(response.data, 'binary').toString('base64');
