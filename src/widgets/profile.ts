@@ -1,10 +1,10 @@
 require('dotenv').config()
 
-import axios, { AxiosResponse } from 'axios'
+import axios from 'axios'
 import { requestInBase64 } from '../utils'
 import errorWidget from './error'
 import buildCard from '../components/card'
-import GithubUser from '../interfaces/GithubUser'
+import GithubUserRequest from '../interfaces/GithubUser'
 import getGithubUserStats from '../fetchers/user-stats-fetcher'
 import { Repository } from '../interfaces/Repositories'
 
@@ -48,7 +48,7 @@ export default async function profileWidget(
     async function getDataOptions(): Promise<string> {
         let dataBoxes = ''
 
-        const profile = await getGithubUserStats(
+        const profile: GithubUserRequest = await getGithubUserStats(
             process.env.GITHUB_TOKEN,
             username
         )
