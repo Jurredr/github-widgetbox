@@ -1,4 +1,4 @@
-import axios from "axios"
+import axios from 'axios'
 
 export function isValidHexColor(hexColor: string): boolean {
     return new RegExp(
@@ -10,10 +10,9 @@ export function getBoolean(str: string): boolean {
     return str.toLowerCase() === 'true'
 }
 
-export async function requestInBase64(url: string): Promise<string> {
-    const response = await axios
-        .get(url, {
-            responseType: 'arraybuffer',
-        })
+export async function requestInBase64(url: string): Promise<Object> {
+    const response = await axios.get(url, {
+        responseType: 'arraybuffer',
+    })
     return Buffer.from(response.data, 'binary').toString('base64')
 }
