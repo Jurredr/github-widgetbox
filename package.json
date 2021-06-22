@@ -28,6 +28,7 @@
         "@babel/eslint-parser": "^7.14.4",
         "@types/express": "^4.17.12",
         "@types/node": "^15.12.1",
+        "@types/node-fetch": "^2.5.10",
         "@typescript-eslint/eslint-plugin": "^4.26.0",
         "@typescript-eslint/parser": "^4.26.0",
         "babel-jest": "^27.0.2",
@@ -48,6 +49,7 @@
         "axios": "^0.21.1",
         "dotenv": "^10.0.0",
         "express": "^4.17.1",
-        "github-username-regex": "^1.0.0"
+        "github-username-regex": "^1.0.0",
+        "node-fetch": "^2.6.1"
     }
 }
