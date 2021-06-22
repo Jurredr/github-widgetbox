@@ -21,6 +21,6 @@ With names (includeNames=true):
 ### Profile
 
 ```md
-[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr)](https://github.com/Jurredr/github-widgetbox)
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits)](https://github.com/Jurredr/github-widgetbox)
 ```
-[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr)](https://github.com/Jurredr/github-widgetbox)
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits)](https://github.com/Jurredr/github-widgetbox)
