@@ -103,7 +103,7 @@ async function profileWidget(username, data) {
                                     ${card_1.default(width, height, '#FFFFFF')}
                                     <g id="profile-card">
                                         <rect id="profile-image" width="65" height="65" rx="30" transform="translate(52 47)" fill="url(#pattern)"/>
-                                        <text id="text-name" data-name="text-name" transform="translate(145 78)" font-size="26" font-family="Roboto-Medium, Roboto, sans-serif" font-weight="500"><tspan x="0" y="0">${response.data.name}</tspan></text>
+                                        <text id="text-name" data-name="text-name" transform="translate(145 78)" font-size="26" font-family="Roboto-Medium, Roboto, sans-serif" font-weight="500"><tspan x="0" y="0">${response.data.name === null ? response.data.login : response.data.name}</tspan></text>
                                         <text id="text-url" data-name="text-url" transform="translate(145 102)" fill="#bfbfbf" font-size="16" font-family="Roboto-Regular, Roboto, sans-serif"><tspan x="0" y="0">GitHub.com/${response.data.login}</tspan></text>
                                         <g id="data-boxes" transform="translate(${width - 52} ${(height - 37) / 2})">
                                             ${dataBoxes}
