@@ -1,4 +1,4 @@
-# github-widgetbox
+# GitHub WidgetBox
 
 [✨] Beautiful, dynamic widgets for GitHub Readme pages. (Statistics, Languages, etc.)
 
