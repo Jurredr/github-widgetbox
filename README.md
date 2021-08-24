@@ -27,3 +27,13 @@ Show off your profile with some interesting statistics. Perfect for profile READ
 ```md
 [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits)](https://github.com/Jurredr/github-widgetbox)
 ```
+
+## TO-DO
+
+[ ] Add themes (dark mode)
+[ ] Add Skills: Tools & Frameworks
+[ ] Add Skills: Software & IDEs
+[ ] Add Profile Tags
+[ ] Add Skill Tags
+[ ] Fix Profile card number spacing
+[ ] Finish Readme
