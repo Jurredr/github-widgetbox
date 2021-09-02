@@ -43,5 +43,6 @@ Show off your profile with some interesting statistics. Perfect for profile READ
 * [ ] Add Profile Tags
 * [ ] Add Skill Tags
 * [ ] Fix Profile card number spacing
-* [ ] Round statistics (use k for thousands)
+* [ ] Add Skills with multiple sections
+* [ ] Add statistics rounding (k for thousands)
 * [ ] Finish Readme
