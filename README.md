@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-[✨] Beautiful, dynamic widgets for GitHub Readme pages. (Statistics, Languages, etc.)
+[✨] Beautiful, dynamic widgets for GitHub Readme pages. (Statistics, Skills, etc.)
 </p>
 <br/><br/>
 
