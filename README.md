@@ -37,12 +37,18 @@ Show off your profile with some interesting statistics. Perfect for profile READ
 <br/><br/>
 ## TO-DO
 
+* [ ] Make all widgets a modular size
 * [ ] Add themes (dark mode)
-* [ ] Add Skills: Tools & Frameworks
-* [ ] Add Skills: Software & IDEs
-* [ ] Add Profile Tags
-* [ ] Add Skill Tags
-* [ ] Fix Profile card number spacing
-* [ ] Add Skills with multiple sections
-* [ ] Add statistics rounding (k for thousands)
-* [ ] Finish Readme
+* [ ] Add Skills: Tools & Frameworks widget
+* [ ] Add Skills: Software & IDEs widget
+* [ ] Add Profile Tag widget
+* [ ] Add Skill Tag widget
+* [ ] Add Commit Streak widget
+* [ ] Add Twitter widget
+* [ ] Add LinkedIn widget
+* [ ] Add Instagram widget
+* [ ] Add YouTube widget
+* [ ] Add Portfolio website widget
+* [ ] Add Project link widget
+* [ ] Add Profile banner widget
+* [ ] Add Stats widget
