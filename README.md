@@ -35,5 +35,4 @@ Show off your profile with some interesting statistics. Perfect for profile READ
 [ ] Add Skills: Software & IDEs
 [ ] Add Profile Tags
 [ ] Add Skill Tags
-[ ] Fix Profile card number spacing
 [ ] Finish Readme
