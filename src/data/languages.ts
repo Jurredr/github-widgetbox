@@ -49,7 +49,7 @@ const languages = [
         height: 23.652,
     },
     {
-        name: ['Python', 'Python3'],
+        name: ['Python', 'Python3', 'Python2'],
         colorFrom: '#9ECFFA',
         colorTo: '#337AB4',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
@@ -105,7 +105,7 @@ const languages = [
         height: 40,
     },
     {
-        name: ['C#', 'CSharp'],
+        name: ['C#', 'CSharp', 'CS'],
         colorFrom: '#ECA5F3',
         colorTo: '#953B9F',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 40">
@@ -265,7 +265,7 @@ const languages = [
         height: 36,
     },
     {
-        name: ['MySQL'],
+        name: ['MySQL', 'SQL'],
         colorFrom: '#FFEC97',
         colorTo: '#E38E01',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30">
