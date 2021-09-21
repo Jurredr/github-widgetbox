@@ -1,18 +1,3 @@
-export function find(name: string): {
-    name: Array<string>
-    colorFrom: string
-    colorTo: string
-    icon: string
-    width: number
-    height: number
-} {
-    return languages.filter(function (languages) {
-        return languages.name
-            .map((language) => language.toUpperCase())
-            .includes(name.toUpperCase())
-    })[0]
-}
-
 const languages = [
     {
         name: ['JavaScript', 'JS'],

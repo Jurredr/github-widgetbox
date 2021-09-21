@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { IconData } from './interfaces/IconData'
 
 export function isValidHexColor(hexColor: string): boolean {
     return new RegExp(
@@ -15,4 +16,12 @@ export async function requestInBase64(url: string): Promise<Object> {
         responseType: 'arraybuffer',
     })
     return Buffer.from(response.data, 'binary').toString('base64')
+}
+
+export function findData(data: IconData[], name: string): IconData {
+    return data.filter(function (data) {
+        return data.name
+            .map((data) => data.toUpperCase())
+            .includes(name.toUpperCase())
+    })[0]
 }
