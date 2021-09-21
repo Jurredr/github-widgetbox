@@ -53,6 +53,17 @@ const frameworks = [
         width: 27.942,
         height: 35.999,
     },
+    {
+        name: ['Flutter'],
+        colorFrom: '#AAE1FB',
+        colorTo: '#07ADFA',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="35.999" viewBox="0 0 29.1 35.999">
+        <path id="flutter-logo" data-name="flutter-logo" d="M21.471,0,3.45,18,9,23.55,32.526.018H21.491Zm.021,16.608-9.707,9.685L21.491,36H32.55l-9.69-9.7,9.69-9.69H21.493Z" transform="translate(-3.45)" fill="#fff"/>
+        </svg>
+        `,
+        width: 29.1,
+        height: 35.998,
+    },
 ]
 
 export default frameworks
