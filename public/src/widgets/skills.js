@@ -5,21 +5,22 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const card_1 = __importDefault(require("../components/card"));
 const gradient_box_1 = __importDefault(require("../components/gradient-box"));
-const languages_1 = require("../data/languages");
+const utils_1 = require("../utils");
 const error_1 = __importDefault(require("./error"));
-function skillsWidget(languageString, includeNames) {
-    const languages = languageString.split(',');
-    if (languages === undefined) {
+const languages_1 = __importDefault(require("../data/languages"));
+function skillsWidget(skillsString, includeNames) {
+    const skillList = skillsString.split(',');
+    if (skillList === undefined) {
         return error_1.default('Skills', '-24%', 'Languages are undefined!', '-28%');
     }
     const width = 812;
     const height = 344 +
-        114 * Math.floor((languages.length - 0.1) / 7) +
-        (includeNames ? (Math.floor((languages.length - 0.1) / 7) + 1) * 25 : 0);
+        114 * Math.floor((skillList.length - 0.1) / 7) +
+        (includeNames ? (Math.floor((skillList.length - 0.1) / 7) + 1) * 25 : 0);
     function getBoxes() {
         let boxes = '';
-        for (let i = 0; i < languages.length; i++) {
-            let foundData = languages_1.find(languages[i]);
+        for (let i = 0; i < skillList.length; i++) {
+            let foundData = utils_1.findData(languages_1.default, skillList[i]);
             if (foundData === undefined) {
                 foundData = {
                     name: [''],
