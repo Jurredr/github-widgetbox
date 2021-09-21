@@ -5,25 +5,25 @@ import errorWidget from './error'
 import languageData from '../data/languages'
 
 export default function skillsWidget(
-    languageString: string,
+    skillsString: string,
     includeNames: boolean
 ): string {
-    const languages: Array<string> = languageString.split(',')
+    const skillList: Array<string> = skillsString.split(',')
 
-    if (languages === undefined) {
+    if (skillList === undefined) {
         return errorWidget('Skills', '-24%', 'Languages are undefined!', '-28%')
     }
 
     const width = 812
     const height =
         344 +
-        114 * Math.floor((languages.length - 0.1) / 7) +
-        (includeNames ? (Math.floor((languages.length - 0.1) / 7) + 1) * 25 : 0)
+        114 * Math.floor((skillList.length - 0.1) / 7) +
+        (includeNames ? (Math.floor((skillList.length - 0.1) / 7) + 1) * 25 : 0)
 
     function getBoxes() {
         let boxes = ''
-        for (let i = 0; i < languages.length; i++) {
-            let foundData = findData(languageData, languages[i])
+        for (let i = 0; i < skillList.length; i++) {
+            let foundData = findData(languageData, skillList[i])
             if (foundData === undefined) {
                 foundData = {
                     name: [''],
