@@ -1,7 +1,8 @@
 import buildCard from '../components/card'
 import buildGradientBox from '../components/gradient-box'
-import { find } from '../data/languages'
+import { findData } from '../utils'
 import errorWidget from './error'
+import languageData from '../data/languages'
 
 export default function skillsWidget(
     languageString: string,
@@ -22,7 +23,7 @@ export default function skillsWidget(
     function getBoxes() {
         let boxes = ''
         for (let i = 0; i < languages.length; i++) {
-            let foundData = find(languages[i])
+            let foundData = findData(languageData, languages[i])
             if (foundData === undefined) {
                 foundData = {
                     name: [''],
