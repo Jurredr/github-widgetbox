@@ -9,13 +9,13 @@ import errorWidget from '../../src/widgets/error'
 
 // Primary skills route
 router.get('/', function (req: Request, res: Response) {
-    const { skillList, includeNames } = req.query
+    const { names, includeNames } = req.query
 
     // Set the header's type to svg/xml
     res.setHeader('Content-Type', 'image/svg+xml')
 
     // Check if languages argument is not present
-    if (skillList === undefined || skillList === null) {
+    if (names === undefined || names === null) {
         res.send(
             errorWidget('Skills', '-24%', 'Languages are undefined!', '-28%')
         )
@@ -23,7 +23,7 @@ router.get('/', function (req: Request, res: Response) {
     }
 
     // Grab the Skills widget
-    res.send(skillsWidget(String(skillList), getBoolean(String(includeNames))))
+    res.send(skillsWidget(String(names), getBoolean(String(includeNames))))
 })
 
 export default router

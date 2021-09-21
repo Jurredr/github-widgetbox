@@ -10,16 +10,16 @@ const utils_1 = require("../../src/utils");
 const error_1 = __importDefault(require("../../src/widgets/error"));
 // Primary skills route
 router.get('/', function (req, res) {
-    const { skillList, includeNames } = req.query;
+    const { names, includeNames } = req.query;
     // Set the header's type to svg/xml
     res.setHeader('Content-Type', 'image/svg+xml');
     // Check if languages argument is not present
-    if (skillList === undefined || skillList === null) {
+    if (names === undefined || names === null) {
         res.send(error_1.default('Skills', '-24%', 'Languages are undefined!', '-28%'));
         return;
     }
     // Grab the Skills widget
-    res.send(skills_1.default(String(skillList), utils_1.getBoolean(String(includeNames))));
+    res.send(skills_1.default(String(names), utils_1.getBoolean(String(includeNames))));
 });
 exports.default = router;
 //# sourceMappingURL=skills-route.js.map
