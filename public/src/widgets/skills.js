@@ -29,6 +29,7 @@ function skillsWidget(skillsString, includeNames) {
                     icon: 'undefined',
                     width: -1,
                     height: -1,
+                    xOffset: 0,
                 };
             }
             const row = Math.floor(i / 7);
@@ -41,9 +42,10 @@ function skillsWidget(skillsString, includeNames) {
                         foundData.icon +
                         '</g>'
                     : '';
-            // TODO: Center names in a better way
             if (includeNames) {
-                boxes += `<g id="header-text" transform="translate(${transX + (80 - foundData.name[0].length * 7.5) / 2.3} ${60 + 140 * row})">
+                boxes += `<g id="header-text" transform="translate(${transX +
+                    (80 - foundData.name[0].length * 7.5) / 2.3 +
+                    foundData.xOffset} ${60 + 140 * row})">
                     <text id="skills" fill="${foundData.colorTo}" transform="translate(0 44)" font-size="16" font-family="Roboto-Light, Roboto, sans-serif" font-weight="300">
                         <tspan x="0" y="0">${foundData.name[0]}</tspan>
                     </text>
