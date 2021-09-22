@@ -384,6 +384,22 @@ const languages = [
         width: 32.04,
         height: 36,
     },
+    {
+        name: ['Solidity'],
+        colorFrom: '#2BC2FF',
+        colorTo: '#577DF7',
+        icon: `<svg id="solidity-logo" data-name="solidity-logo" xmlns="http://www.w3.org/2000/svg" width="23.19" height="35.987" viewBox="0 0 23.19 35.987">
+        <path id="Path_127" data-name="Path 127" d="M17.347,0,11.562,10.283H0L5.781,0H17.347" fill="#fff" opacity="0.45"/>
+        <path id="Path_128" data-name="Path 128" d="M136.381,10.283h11.566L142.166,0H130.6Z" transform="translate(-124.819)" fill="#fff" opacity="0.6"/>
+        <path id="Path_129" data-name="Path 129" d="M5.781,20.561l5.781-10.278L5.781,0,0,10.283Z" fill="#fff" opacity="0.8"/>
+        <path id="Path_130" data-name="Path 130" d="M131.9,590.983l5.785-10.283h11.566l-5.785,10.283H131.9" transform="translate(-126.062 -554.996)" fill="#fff" opacity="0.45"/>
+        <path id="Path_131" data-name="Path 131" d="M12.866,580.7H1.3l5.781,10.283H18.647Z" transform="translate(-1.242 -554.996)" fill="#fff" opacity="0.6"/>
+        <path id="Path_132" data-name="Path 132" d="M268.381,348.5,262.6,358.778l5.781,10.283,5.785-10.283Z" transform="translate(-250.976 -333.074)" fill="#fff" opacity="0.8"/>
+        </svg>
+        `,
+        width: 23.19,
+        height: 35.987,
+    },
 ]
 
 export default languages
