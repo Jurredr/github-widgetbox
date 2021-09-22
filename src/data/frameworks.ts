@@ -1,4 +1,6 @@
-const frameworks = [
+import { IconData } from '../interfaces/IconData'
+
+const frameworks: IconData[] = [
     {
         name: ['Vue', 'VueJS'],
         colorFrom: '#AFF8D6',
@@ -8,6 +10,7 @@ const frameworks = [
         </svg>`,
         width: 31.5,
         height: 26.979,
+        xOffset: 0,
     },
     {
         name: ['React', 'ReactJS'],
@@ -19,6 +22,7 @@ const frameworks = [
         `,
         width: 36,
         height: 31.502,
+        xOffset: 0,
     },
     {
         name: ['Nuxt', 'NuxtJS'],
@@ -30,6 +34,7 @@ const frameworks = [
         `,
         width: 35.996,
         height: 26.73,
+        xOffset: 0,
     },
     {
         name: ['Next', 'NextJS'],
@@ -41,6 +46,7 @@ const frameworks = [
         `,
         width: 35.998,
         height: 35.998,
+        xOffset: 0,
     },
     {
         name: ['Django'],
@@ -52,6 +58,7 @@ const frameworks = [
         `,
         width: 27.942,
         height: 35.999,
+        xOffset: 0,
     },
     {
         name: ['Flutter'],
@@ -63,6 +70,7 @@ const frameworks = [
         `,
         width: 29.1,
         height: 35.998,
+        xOffset: 0,
     },
 ]
 

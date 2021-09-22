@@ -32,6 +32,7 @@ export default function skillsWidget(
                     icon: 'undefined',
                     width: -1,
                     height: -1,
+                    xOffset: 0,
                 }
             }
 
@@ -56,10 +57,11 @@ export default function skillsWidget(
                       '</g>'
                     : ''
 
-            // TODO: Center names in a better way
             if (includeNames) {
                 boxes += `<g id="header-text" transform="translate(${
-                    transX + (80 - foundData.name[0].length * 7.5) / 2.3
+                    transX +
+                    (80 - foundData.name[0].length * 7.5) / 2.3 +
+                    foundData.xOffset
                 } ${60 + 140 * row})">
                     <text id="skills" fill="${
                         foundData.colorTo

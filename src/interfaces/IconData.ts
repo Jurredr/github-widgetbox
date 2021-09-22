@@ -5,4 +5,5 @@ export interface IconData {
     icon: string
     width: number
     height: number
+    xOffset: number
 }
