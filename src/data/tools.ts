@@ -25,6 +25,21 @@ const tools: IconData[] = [
         height: 25.89,
         xOffset: 0,
     },
+    {
+        name: ['NPM', 'NodePackageManager'],
+        colorFrom: '#FF9B49',
+        colorTo: '#E23836',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="14.063" viewBox="0 0 36 14.063">
+        <g id="npm-logo" data-name="npm-logo" transform="translate(0 -10.969)">
+          <path id="Path_5" data-name="Path 5" d="M16,14.984h2V19H16Z" fill="#fff"/>
+          <path id="Path_6" data-name="Path 6" d="M0,10.969V23.02H10v2.011h8V23.02H36V10.969ZM10,21.016H8V14.991H6v6.026H2V12.98h8v8.037Zm10,0H16v2.011H12V12.98h8Zm14.006,0h-2V14.991h-2v6.026h-2V14.991h-2v6.026h-4V12.98h12v8.037Z" fill="#fff"/>
+        </g>
+        </svg>
+        `,
+        width: 35.995,
+        height: 14.063,
+        xOffset: 0,
+    },
 ]
 
 export default tools
