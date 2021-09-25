@@ -52,6 +52,18 @@ const tools: IconData[] = [
         height: 36,
         xOffset: 0,
     },
+    {
+        name: ['Webpack', 'WebpackJS'],
+        colorFrom: '#A0D6F1',
+        colorTo: '#2C83CD',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32.6" height="36" viewBox="0 0 32.6 36">
+        <path id="Icon_simple-webpack" data-name="Icon simple-webpack" d="M35.1,30.319,20.443,38.572V32.144l9.131-5L35.1,30.319Zm1-.9V12.155l-5.363,3.082V26.33Zm-31.6.9,14.655,8.253V32.144l-9.131-5L4.5,30.319Zm-1-.9V12.155l5.363,3.082V26.33L3.5,29.415Zm.627-18.377,15.03-8.466V8.787L9.528,14.06l-.073.042L4.127,11.038Zm31.346,0L20.443,2.572V8.787l9.629,5.273.073.042,5.328-3.064ZM19.157,30.682l-9.008-4.931V15.98l9.008,5.179v9.523Zm1.286,0,9.008-4.931V15.98l-9.008,5.179v9.523ZM10.759,14.849,19.8,9.9l9.043,4.952-9.043,5.2Z" transform="translate(-3.5 -2.572)" fill="#fff"/>
+        </svg>
+        `,
+        width: 32.6,
+        height: 36,
+        xOffset: 0,
+    },
 ]
 
 export default tools
