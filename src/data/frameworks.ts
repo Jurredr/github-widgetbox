@@ -84,6 +84,18 @@ const frameworks: IconData[] = [
         height: 36,
         xOffset: 0,
     },
+    {
+        name: ['Bootstrap'],
+        colorFrom: '#E1BEFF',
+        colorTo: '#892EE5',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+        <path id="bootstrap-logo" data-name="bootstrap-logo" d="M23.488,24.744a3.2,3.2,0,0,1-3.529,3.329h-6.5V21.509h6.5c3.42,0,3.529,2.563,3.529,3.235Zm-4.03-5.877c.054,0,3.089.08,3.089-2.918,0-1.247-.282-2.882-3.089-2.882h-6v5.8ZM36,8.25v24a6.018,6.018,0,0,1-6,6H6a6.018,6.018,0,0,1-6-6v-24a6.018,6.018,0,0,1,6-6H30A6.018,6.018,0,0,1,36,8.25ZM27.165,25.221c0-1.733-.534-4.684-3.942-5.412V19.75a4.6,4.6,0,0,0,3-4.471c0-.562.161-5.206-6.236-5.206H9.783v21c10.3,0,11.24.135,13.146-.459a5.4,5.4,0,0,0,4.236-5.394Z" transform="translate(0 -2.25)" fill="#fff"/>
+        </svg>
+        `,
+        width: 36,
+        height: 36,
+        xOffset: 0,
+    },
 ]
 
 export default frameworks
