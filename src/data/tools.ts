@@ -76,6 +76,18 @@ const tools: IconData[] = [
         height: 35.998,
         xOffset: 0,
     },
+    {
+        name: ['Firebase'],
+        colorFrom: '#FFD89F',
+        colorTo: '#F99F00',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="26.055" height="35.999" viewBox="0 0 26.055 35.999">
+        <path id="firebase-logo" data-name="firebase-logo" d="M5.835,23.51,9.382.692A.813.813,0,0,1,10.9.434L14.719,7.59Zm25.193,5.537-3.378-21A.815.815,0,0,0,26.272,7.6L4.972,29.046l11.785,6.642a2.43,2.43,0,0,0,2.381,0l11.889-6.642ZM21.45,10.722,18.72,5.5a.813.813,0,0,0-1.44,0L5.3,26.976Z" transform="translate(-4.972 0)" fill="#fff"/>
+        </svg>
+        `,
+        width: 26.055,
+        height: 35.999,
+        xOffset: 0,
+    },
 ]
 
 export default tools
