@@ -96,6 +96,18 @@ const frameworks: IconData[] = [
         height: 36,
         xOffset: 0,
     },
+    {
+        name: ['Gatsby', 'GatsbyJS'],
+        colorFrom: '#F3A1FF',
+        colorTo: '#6E2BB0',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36.002" viewBox="0 0 36 36.002">
+        <path id="gatsby-logo" data-name="gatsby-logo" d="M18.011.01a17.9,17.9,0,0,0-18,18,17.906,17.906,0,0,0,18,18,17.9,17.9,0,0,0,18-18A17.9,17.9,0,0,0,18.011.01ZM3.923,18.167,17.855,32.1A13.963,13.963,0,0,1,3.923,18.167ZM21.142,31.786,4.237,14.881a14.147,14.147,0,0,1,25.2-5.164L27.4,11.436a11.492,11.492,0,0,0-9.548-5.008A11.339,11.339,0,0,0,7.054,14.1L21.768,28.813a11.149,11.149,0,0,0,7.2-8.14H22.863V18.011H32.1A14.111,14.111,0,0,1,21.142,31.786Z" transform="translate(-0.01 -0.01)" fill="#fff"/>
+        </svg>
+        `,
+        width: 36,
+        height: 36.002,
+        xOffset: 0,
+    },
 ]
 
 export default frameworks
