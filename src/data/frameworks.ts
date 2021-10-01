@@ -176,6 +176,19 @@ const frameworks: IconData[] = [
         height: 36,
         xOffset: 0,
     },
+    {
+        name: ['Angular', 'AngularJS'],
+        colorFrom: '#FBA3AC',
+        colorTo: '#DD0132',
+        icon: `<svg id="angular-logo" data-name="angular-logo" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+        <path id="Path_1" data-name="Path 1" d="M15.017,18h5.966L18,11.717Z" transform="translate(0 -0.561)" fill="#fff"/>
+        <path id="Path_2" data-name="Path 2" d="M20.248,2.25l-18,6.429L5.956,30.536,20.25,38.25l14.283-7.714L38.25,8.679Zm7.073,25.714-2.137-4.5h-9.87l-2.136,4.5H9.964L20.25,5.464l10.286,22.5Z" transform="translate(-2.25 -2.25)" fill="#fff"/>
+        </svg>
+        `,
+        width: 36,
+        height: 36,
+        xOffset: 0,
+    },
 ]
 
 export default frameworks
