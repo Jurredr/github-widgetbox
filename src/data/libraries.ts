@@ -25,6 +25,18 @@ const libraries: IconData[] = [
         height: 16.64,
         xOffset: 0,
     },
+    {
+        name: ['Tensorflow'],
+        colorFrom: '#FFCA57',
+        colorTo: '#F06335',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="40.287" viewBox="0 0 36 40.287">
+        <path id="Path_139" data-name="Path 139" d="M24.039,40.287,17.165,36.3V12.763L6.81,18.746l.025-8.913L24.039,0ZM25.584,0V40.287L32.458,36.3V24.962l5.19,3-.031-7.752-5.159-2.946v-4.5L42.81,18.746l-.025-8.913Z" transform="translate(-6.81)" fill="#fff"/>
+        </svg>
+        `,
+        width: 36,
+        height: 40.287,
+        xOffset: 0,
+    },
 ]
 
 export default libraries
