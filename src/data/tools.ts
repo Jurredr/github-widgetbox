@@ -143,6 +143,18 @@ const tools: IconData[] = [
         height: 21.471,
         xOffset: 0,
     },
+    {
+        name: ['Vercel', 'Zeit'],
+        colorFrom: '#A09F9F',
+        colorTo: '#343333',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="31" viewBox="0 0 36 31">
+        <path id="vercel-logo" d="M18,0,36,31H0Z" fill="#fff"/>
+        </svg>
+        `,
+        width: 36,
+        height: 31,
+        xOffset: 0,
+    },
 ]
 
 export default tools
