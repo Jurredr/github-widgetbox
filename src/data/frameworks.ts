@@ -214,6 +214,18 @@ const frameworks: IconData[] = [
         height: 35.985,
         xOffset: 0,
     },
+    {
+        name: ['Ionic'],
+        colorFrom: '#B2CFFF',
+        colorTo: '#006DFF',
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+        <path id="ionic-logo" data-name="ionic-logo" d="M34.383,10.54l-.154-.345-.254.282a5.646,5.646,0,0,1-2.257,1.554l-.239.092.1.233A14.712,14.712,0,1,1,24.3,4.712l.233.113.1-.233a5.65,5.65,0,0,1,1.659-2.18l.3-.238L26.249,2a18,18,0,1,0,8.136,8.544ZM18,9.8A8.205,8.205,0,1,0,26.2,18,8.214,8.214,0,0,0,18,9.8Zm15.518-3.01a3.741,3.741,0,1,1-3.741-3.741A3.741,3.741,0,0,1,33.518,6.785Z" transform="translate(-0.001 -0.001)" fill="#fff"/>
+        </svg>
+        `,
+        width: 36,
+        height: 36,
+        xOffset: 0,
+    },
 ]
 
 export default frameworks
