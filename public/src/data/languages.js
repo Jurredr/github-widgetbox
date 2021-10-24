@@ -469,6 +469,18 @@ const languages = [
         height: 37.737,
         xOffset: 4,
     },
+    {
+        name: ['Markdown', 'md'],
+        colorFrom: '#699EED',
+        colorTo: '#279EE8',
+        icon: `<svg id="markdown-logo" data-name="markdown-logo" xmlns="http://www.w3.org/2000/svg" width="42.885" height="26.391" viewBox="0 0 42.885 26.391">
+        <path id="Path_146" data-name="Path 146" d="M-1.907-5h36.7a3.1,3.1,0,0,1,3.093,3.093V18.3a3.1,3.1,0,0,1-3.093,3.093h-36.7A3.1,3.1,0,0,1-5,18.3V-1.907A3.1,3.1,0,0,1-1.907-5Zm36.7,24.329A1.032,1.032,0,0,0,35.823,18.3V-1.907a1.032,1.032,0,0,0-1.031-1.031h-36.7A1.032,1.032,0,0,0-2.938-1.907V18.3a1.032,1.032,0,0,0,1.031,1.031Z" transform="translate(5 5)" fill="#fff"/>
+        <path id="Path_145" data-name="Path 145" d="M30,44.02V30h4.124l4.124,5.154L42.371,30h4.124V44.02H42.371V35.979l-4.124,5.154-4.124-5.154V44.02Zm25.772,0-6.185-6.8H53.71V30h4.124v7.216h4.124Z" transform="translate(-23.815 -23.815)" fill="#fff"/>
+        </svg>`,
+        width: 42.885,
+        height: 26.391,
+        xOffset: -6,
+    },
 ];
 exports.default = languages;
 //# sourceMappingURL=languages.js.map
