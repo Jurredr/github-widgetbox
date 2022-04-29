@@ -1,6 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+module.exports = {
+  reactStrictMode: true,
+  webpack(config) {
+    config.module.rules.push({ test: /\.svg$/, use: ['@svgr/webpack'] })
+    config.plugins.push(new WindiCSSWebpackPlugin())
+    return config
+  }
+}

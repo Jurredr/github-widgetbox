@@ -1,6 +1,7 @@
 import { createTheme, NextUIProvider } from '@nextui-org/react'
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
+import 'windi.css'
 import WebHead from '../components/WebHead'
 import '@fontsource/roboto'
 

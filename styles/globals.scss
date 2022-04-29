@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -13,4 +9,19 @@
 
 * {
   @apply font-roboto;
+  letter-spacing: 0em !important;
+  line-height: 0em !important;
+}
+
+.nextimg {
+  img {
+    width: 100% !important;
+    position: relative !important;
+    height: 60rem !important;
+  }
+
+  & > div {
+    position: unset !important;
+    overflow: visible !important;
+  }
 }

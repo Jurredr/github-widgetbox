@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="348.005" height="348.005" viewBox="0 0 348.005 348.005">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#44ceef"/>
+      <stop offset="1" stop-color="#6d4ef0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_54" data-name="Group 54" transform="translate(-292 -442)">
+    <path id="Path_7" data-name="Path 7" d="M68.236,0H279.769A68.236,68.236,0,0,1,348,68.236V279.769A68.236,68.236,0,0,1,279.769,348H68.236A68.236,68.236,0,0,1,0,279.769V68.236A68.236,68.236,0,0,1,68.236,0Z" transform="translate(292 442)" fill="url(#linear-gradient)"/>
+    <text id="G" transform="translate(367 705)" fill="#fff" font-size="257" font-family="Montserrat-SemiBold, Montserrat" font-weight="600">
+      <tspan x="0" y="0">G</tspan>
+    </text>
+  </g>
+</svg>
