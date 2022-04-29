@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/62119716/165963434-42f4376b-3bdd-49a6-853b-6f70d1e537d4.png)
+![image](https://user-images.githubusercontent.com/62119716/165963936-dc518c49-69b6-4106-aadb-26f15346df03.png)
 
 <p align="center">
 [✨] Beautiful, dynamic widgets for GitHub Readme pages. (Statistics, Skills, etc.)
