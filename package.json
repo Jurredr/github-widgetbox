@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/roboto": "^4.5.5",
     "@nextui-org/react": "^1.0.0-beta.6",
     "next": "12.1.5",
     "react": "18.1.0",
+    "react-beautiful-dnd": "^13.1.0",
     "react-dom": "18.1.0",
     "sass": "^1.51.0"
   },

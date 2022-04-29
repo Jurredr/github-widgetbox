@@ -2,6 +2,7 @@ import { createTheme, NextUIProvider } from '@nextui-org/react'
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import WebHead from '../components/WebHead'
+import '@fontsource/roboto'
 
 // NextUI theme
 const theme = createTheme({
