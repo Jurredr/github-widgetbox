@@ -1,6 +1,4 @@
-<p align="center">
-    <img width="60%" height="60%" src="https://user-images.githubusercontent.com/62119716/130690355-4686da67-b884-4670-a9c6-d6a85333951a.png" alt="GitHub WidgetBox" />
-</p>
+![image](https://user-images.githubusercontent.com/62119716/165963434-42f4376b-3bdd-49a6-853b-6f70d1e537d4.png)
 
 <p align="center">
 [✨] Beautiful, dynamic widgets for GitHub Readme pages. (Statistics, Skills, etc.)
