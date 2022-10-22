@@ -38,19 +38,19 @@ export default function skillsWidget(
     const ROW = 114
     const PAD = 60
     
-    if (languagesString === undefined || languagesString === null) {
+    if (!languagesString) {
         languagesString = 'undefined'
     }
-    if (frameworksString === undefined || frameworksString === null) {
+    if (!frameworksString) {
         frameworksString = 'undefined'
     }
-    if (librariesString === undefined || librariesString === null) {
+    if (!librariesString) {
         librariesString = 'undefined'
     }
-    if (toolsString === undefined || toolsString === null) {
+    if (!toolsString) {
         toolsString = 'undefined'
     }
-    if (softwareString === undefined || softwareString === null) {
+    if (!softwareString) {
         softwareString = 'undefined'
     }
 

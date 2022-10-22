@@ -22,12 +22,7 @@ router.get('/', function (req: Request, res: Response) {
     res.setHeader('Content-Type', 'image/svg+xml')
 
     // Check if languages argument is not present
-    if ((languages === undefined || languages === null) 
-    && (frameworks === undefined || frameworks === null) 
-    && (libraries === undefined || libraries === null) 
-    && names === undefined
-    && (tools === undefined || tools === null) 
-    && (software === undefined || software === null) 
+    if (!languages && !frameworks && !libraries && !names && !tools && !software
     ) {
         res.send(
             errorWidget('Skills', '-24%', 'Languages are undefined!', '-28%')
@@ -35,9 +30,8 @@ router.get('/', function (req: Request, res: Response) {
         return
     }    
 
-    if (names !== undefined) {
+    if (names) {
         res.send(skillsWidget(String(names), undefined, undefined, undefined, undefined, getBoolean(String(includeNames))))
-        return
     } else {
         res.send(skillsWidget(String(languages), String(frameworks), String(libraries), String(tools), String(software), getBoolean(String(includeNames))))
     }
