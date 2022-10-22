@@ -39,7 +39,7 @@ async function getGithubUserStats(token, username) {
           }
           `,
     };
-    const response = await node_fetch_1.default('https://api.github.com/graphql', {
+    const response = await (0, node_fetch_1.default)('https://api.github.com/graphql', {
         method: 'POST',
         body: JSON.stringify(body),
         headers: headers,

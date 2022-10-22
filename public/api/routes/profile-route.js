@@ -15,23 +15,23 @@ router.get('/', function (req, res) {
     res.setHeader('Content-Type', 'image/svg+xml');
     // Check if username argument is not present
     if (username === undefined || username === null) {
-        res.send(error_1.default('Profile', '-25%', 'Username is undefined!', '-26%'));
+        res.send((0, error_1.default)('Profile', '-25%', 'Username is undefined!', '-26%'));
         return;
     }
     // Check validity based on GitHub's username rules
     if (!githubUsernameRegex.test(username)) {
-        res.send(error_1.default('Profile', '-25%', 'Username is invalid!', '-22%'));
+        res.send((0, error_1.default)('Profile', '-25%', 'Username is invalid!', '-22%'));
         return;
     }
     // Check if data argument is not present
     if (data === undefined || data === null) {
-        res.send(error_1.default('Profile', '-25%', 'Data option is missing!', '-25%'));
+        res.send((0, error_1.default)('Profile', '-25%', 'Data option is missing!', '-25%'));
         return;
     }
     // Grab the Profile widget
-    profile_1.default(String(username), String(data)).then((response) => {
+    (0, profile_1.default)(String(username), String(data)).then((response) => {
         if (response === undefined || response === null) {
-            res.send(error_1.default('Profile', '-25%', 'GitHub API-call error!', '-24%'));
+            res.send((0, error_1.default)('Profile', '-25%', 'GitHub API-call error!', '-24%'));
         }
         else {
             res.send(response);

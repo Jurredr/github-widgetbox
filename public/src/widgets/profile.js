@@ -14,20 +14,20 @@ async function profileWidget(username, data) {
     // Return error if dataOptions argument is undefined
     if (dataOptions === undefined) {
         return new Promise((res) => {
-            res(error_1.default('Profile', '-25%', 'Data option is missing!', '-25%'));
+            res((0, error_1.default)('Profile', '-25%', 'Data option is missing!', '-25%'));
         });
     }
     // Return error if more than 4 dataOptions were supplied
     if (dataOptions.length > 4) {
         return new Promise((res) => {
-            res(error_1.default('Profile', '-25%', `Can't have more than 4 data-options!`, '-40%'));
+            res((0, error_1.default)('Profile', '-25%', `Can't have more than 4 data-options!`, '-40%'));
         });
     }
     const width = 842;
     const height = 165;
     async function getDataOptions() {
         let dataBoxes = '';
-        const profile = await user_stats_fetcher_1.default(process.env.GITHUB_TOKEN, username);
+        const profile = await (0, user_stats_fetcher_1.default)(process.env.GITHUB_TOKEN, username);
         const stargazers = [];
         profile.data.user.repositories.nodes.forEach((repo, index) => {
             stargazers[index] = repo.stargazers.totalCount;
@@ -54,7 +54,7 @@ async function profileWidget(username, data) {
                 // Incorrect data item found
                 default:
                     return new Promise((res) => {
-                        res(error_1.default('Profile', '-25%', `Invalid data item found!`, '-26%'));
+                        res((0, error_1.default)('Profile', '-25%', `Invalid data item found!`, '-26%'));
                     });
             }
         }
@@ -81,14 +81,14 @@ async function profileWidget(username, data) {
         // Create the request
         const response = await axios_1.default.get(`https://api.github.com/users/${username}`);
         // Grab the avatar
-        const avatar = await utils_1.requestInBase64(response.data.avatar_url);
+        const avatar = await (0, utils_1.requestInBase64)(response.data.avatar_url);
         return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
                                     <defs>
                                         <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 200 200">
                                             <image width="200" height="200" xlink:href="data:image/jpeg;base64,${avatar}"/>
                                         </pattern>
                                     </defs>
-                                    ${card_1.default(width, height, '#FFFFFF')}
+                                    ${(0, card_1.default)(width, height, '#FFFFFF')}
                                     <g id="profile-card">
                                         <rect id="profile-image" width="65" height="65" rx="30" transform="translate(52 47)" fill="url(#pattern)"/>
                                         <text id="text-name" data-name="text-name" transform="translate(145 78)" font-size="26" font-family="Roboto-Medium, Roboto, sans-serif" font-weight="500"><tspan x="0" y="0">${response.data.name === null
@@ -103,7 +103,7 @@ async function profileWidget(username, data) {
     }
     catch (error) {
         return new Promise((res) => {
-            res(error_1.default('Profile', '-25%', 'GitHub API-call error!', '-24%'));
+            res((0, error_1.default)('Profile', '-25%', 'GitHub API-call error!', '-24%'));
         });
     }
 }

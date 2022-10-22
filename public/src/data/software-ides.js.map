@@ -1,0 +1,1 @@
+{"version":3,"file":"software-ides.js","sourceRoot":"","sources":["../../../src/data/software-ides.ts"],"names":[],"mappings":";;AAEA,MAAM,YAAY,GAAe;IAC7B;QACI,IAAI,EAAE,CAAC,OAAO,EAAE,KAAK,CAAC;QACtB,SAAS,EAAE,SAAS;QACpB,OAAO,EAAE,SAAS;QAClB,IAAI,EAAE;;;SAGL;QACD,KAAK,EAAE,MAAM;QACb,MAAM,EAAE,EAAE;QACV,OAAO,EAAE,CAAC;KACb;CACJ,CAAA;AAED,kBAAe,YAAY,CAAA"}
