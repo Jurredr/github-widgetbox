@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { IconData } from './interfaces/IconData'
+import { Theme } from './interfaces/Theme'
 
 export function isValidHexColor(hexColor: string): boolean {
     return new RegExp(
@@ -23,5 +24,13 @@ export function findData(data: IconData[], name: string): IconData {
         return data.name
             .map((data) => data.toUpperCase())
             .includes(name.toUpperCase())
+    })[0]
+}
+
+export function getTheme(themes: Theme[], themeName: string): Theme {
+    return themes.filter(function (themes) {
+        return themes.name
+            .map((theme) => theme.toUpperCase())
+            .includes(themeName.toUpperCase())
     })[0]
 }
