@@ -58,22 +58,22 @@ function skillsWidget(languagesString, frameworksString, librariesString, toolsS
     const frameworkTitleHeight = languagesTitleHeight
         + ((languageList.length > 1 || languageList[0] !== 'undefined' ? 1 : 0) * PAD)
         + ((languageList.length > 1 || languageList[0] !== 'undefined' ? rowHeightLanguages : 0) * ROW)
-        + (includeNames ? (rowHeightFrameworks) * 25 : 0);
+        + (includeNames && (languageList.length > 1 || languageList[0] !== 'undefined') ? (rowHeightFrameworks) * 25 : 0);
     const rowHeightLibraries = Math.round((libraryList.length - 0.1) / 7) > 1 ? Math.round((libraryList.length - 0.1) / 7) : 1;
     const libraryTitleHeight = frameworkTitleHeight
         + ((frameworkList.length > 1 || frameworkList[0] !== 'undefined' ? 1 : 0) * PAD)
         + ((frameworkList.length > 1 || frameworkList[0] !== 'undefined' ? rowHeightFrameworks : 0) * ROW)
-        + (includeNames ? (rowHeightLibraries) * 25 : 0);
+        + (includeNames && (frameworkList.length > 1 || frameworkList[0] !== 'undefined') ? (rowHeightLibraries) * 25 : 0);
     const rowHeightTools = Math.round((toolsList.length - 0.1) / 7) > 1 ? Math.round((toolsList.length - 0.1) / 7) : 1;
     const toolsTitleHeight = libraryTitleHeight
         + ((libraryList.length > 1 || libraryList[0] !== 'undefined' ? 1 : 0) * PAD)
         + ((libraryList.length > 1 || libraryList[0] !== 'undefined' ? rowHeightLibraries : 0) * ROW)
-        + (includeNames ? (rowHeightTools) * 25 : 0);
+        + (includeNames && (libraryList.length > 1 || libraryList[0] !== 'undefined') ? (rowHeightTools) * 25 : 0);
     const rowHeightSoftware = Math.round((softwareList.length - 0.1) / 7) > 1 ? Math.round((softwareList.length - 0.1) / 7) : 1;
     const softwareTitleHeight = toolsTitleHeight
         + ((toolsList.length > 1 || toolsList[0] !== 'undefined' ? 1 : 0) * PAD)
         + ((toolsList.length > 1 || toolsList[0] !== 'undefined' ? rowHeightTools : 0) * ROW)
-        + (includeNames ? (rowHeightSoftware) * 25 : 0);
+        + (includeNames && (toolsList.length > 1 || toolsList[0] !== 'undefined') ? (rowHeightSoftware) * 25 : 0);
     // Set the size of the main SVG container
     const width = BASE_WIDTH;
     const height = BASE_HEIGHT +
@@ -82,13 +82,12 @@ function skillsWidget(languagesString, frameworksString, librariesString, toolsS
             (libraryList.length > 1 || libraryList[0] !== 'undefined' ? rowHeightLibraries : 0) +
             (toolsList.length > 1 || toolsList[0] !== 'undefined' ? rowHeightTools : 0) +
             (softwareList.length > 1 || softwareList[0] !== 'undefined' ? rowHeightSoftware : 0)))
-        + (PAD * (2 +
+        + (PAD * (1 +
             (languageList.length > 1 || languageList[0] !== 'undefined' ? 1 : 0) +
             (frameworkList.length > 1 || frameworkList[0] !== 'undefined' ? 1 : 0) +
             (libraryList.length > 1 || libraryList[0] !== 'undefined' ? 1 : 0) +
             (toolsList.length > 1 || toolsList[0] !== 'undefined' ? 1 : 0) +
-            (softwareList.length > 1 || softwareList[0] !== 'undefined' ? 1 : 0) +
-            (includeNames ? 1 : 0)))
+            (softwareList.length > 1 || softwareList[0] !== 'undefined' ? 1 : 0)))
         // Add space for the names if true.
         + (includeNames ? (Math.round(((languageList.length + libraryList.length + frameworkList.length + toolsList.length + softwareList.length) - 0.1) / 7) + 1) * 25 : 0);
     /**
