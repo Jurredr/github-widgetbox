@@ -81,10 +81,10 @@ Show off your profile with some interesting statistics. Perfect for profile READ
 ## TO-DO
 
 * [x] Fix skills text being off-center
-* [ ] Make all widgets a modular size
-* [ ] Add themes (dark mode)
+* [x] Add themes (dark mode)
 * [x] Add Skills: Tools & Frameworks widget
 * [x] Add Skills: Software & IDEs widget
+* [ ] Make all widgets a modular size
 * [ ] Add Profile Tag widget
 * [ ] Add Skill Tag widget
 * [ ] Add Commit Streak widget
