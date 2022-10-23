@@ -1,3 +1,19 @@
+/**
+ * Creates a gradient box.
+ * 
+ * This method creates a box that has a gradient colour. The box contains the
+ * logo of the framework, language, library, tool or IDE.
+ * 
+ * It is important that the ID is not shared in the SVG between other gradient boxes
+ * because if they share an ID they will use the same colour.
+ * 
+ * @param id The id of the gradient box
+ * @param fromColor The starting color in hexcode
+ * @param toColor The final color of the gradient in hexcode
+ * @param transX The x coordinate of the box
+ * @param transY The y coordinate of the box
+ * @returns A gradient box
+ */
 export default function buildGradientBox(
     id: number,
     fromColor: string,
