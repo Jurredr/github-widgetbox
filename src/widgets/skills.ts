@@ -1,12 +1,13 @@
 import buildCard from '../components/card'
 import buildGradientBox from '../components/gradient-box'
-import { findData } from '../utils'
+import { findData, getTheme } from '../utils'
 import languageData from '../data/languages'
 import frameworks from '../data/frameworks'
 import libraries from '../data/libraries'
 import tools from '../data/tools'
 import softwareIDEs from '../data/software-ides'
-
+import { Theme } from "../interfaces/Theme";
+import themes from '../data/themes'
 /**
  * Builds the skill widget page
  * 
@@ -29,6 +30,7 @@ export default function skillsWidget(
     toolsString?: string,
     softwareString?: string,
     includeNames?: boolean,
+    themeString?: string
 
 ): string {
 
@@ -52,6 +54,15 @@ export default function skillsWidget(
     }
     if (!softwareString) {
         softwareString = 'undefined'
+    }
+
+    // Set the theme
+    let theme : Theme = getTheme(themes, 'default')
+    if (themeString) {
+        theme = getTheme(themes, themeString)
+    }
+    if (!theme) {
+        theme = getTheme(themes, 'default')
     }
 
     const languageList: string[] = languagesString.split(',')
@@ -174,9 +185,9 @@ export default function skillsWidget(
     return `
     <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"
     xmlns="http://www.w3.org/2000/svg">
-        ${buildCard(width, height, '#FFFFFF')}
+        ${buildCard(width, height, theme.background)}
         <g id="header-text" transform="translate(60 60)">
-            <text id="skills" transform="translate(0 44)" font-size="42" font-family="Roboto-Medium, Roboto, sans-serif" font-weight="500">
+            <text id="skills" fill="${theme.title}" transform="translate(0 44)" font-size="42" font-family="Roboto-Medium, Roboto, sans-serif" font-weight="500">
                 <tspan x="0" y="0">Skills</tspan>
             </text>
             <text style="display:${languageList.length <=  1 && languageList[0] === 'undefined' ? "none" : "block"}" id="languages" transform="translate(0 ${FIRST_ROW})" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">

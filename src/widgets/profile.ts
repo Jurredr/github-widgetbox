@@ -1,17 +1,31 @@
 require('dotenv').config()
 
 import axios from 'axios'
-import { requestInBase64 } from '../utils'
+import { getTheme, requestInBase64 } from '../utils'
 import errorWidget from './error'
 import buildCard from '../components/card'
 import GithubUserRequest from '../interfaces/GithubUser'
 import getGithubUserStats from '../fetchers/user-stats-fetcher'
 import { Repository } from '../interfaces/Repositories'
+import { Theme } from "../interfaces/Theme";
+import themes from '../data/themes'
 
 export default async function profileWidget(
     username: string,
-    data: string
+    data: string,
+    themeString?: string
 ): Promise<string> {
+
+
+    // Set the theme
+    let theme: Theme = getTheme(themes, 'default')
+    if (themeString) {
+        theme = getTheme(themes, themeString)
+    }
+    if (!theme) {
+        theme = getTheme(themes, 'default')
+    }
+
     const dataOptions: Array<string> = data.split(',')
 
     // Return error if dataOptions argument is undefined
@@ -132,22 +146,18 @@ export default async function profileWidget(
             color2: string,
             svg: string
         ) {
-            dataBoxes += `<g id="${name}" transform="translate(${
-                (dataOptions.length - 1 - index) * -108
-            } 0)">
+            dataBoxes += `<g id="${name}" transform="translate(${(dataOptions.length - 1 - index) * -108
+                } 0)">
                     <rect id="${name}-box" width="90" height="37" rx="18.5" transform="translate(-90 0)" fill="${color1}"/>
-                    <text id="${name}-text" data-name="${name}-text" transform="translate(${
-                name === 'followers' ? '-43' : '-47'
-            } 25)" fill="${color2}" font-size="16" font-family="Roboto-Regular, Roboto, sans-serif">
+                    <text id="${name}-text" data-name="${name}-text" transform="translate(${name === 'followers' ? '-43' : '-47'
+                } 25)" fill="${color2}" font-size="16" font-family="Roboto-Regular, Roboto, sans-serif">
                         <tspan x="0" y="0">${count}</tspan>
                     </text>
-                    ${
-                        name !== 'commits' && name !== 'contributions'
-                            ? `<path id="${name}-icon" transform="translate(-71 ${
-                                  name === 'stars' ? '10' : '8'
-                              })" fill="${color2}" d="${svg}"/>`
-                            : svg
-                    }
+                    ${name !== 'commits' && name !== 'contributions'
+                    ? `<path id="${name}-icon" transform="translate(-71 ${name === 'stars' ? '10' : '8'
+                    })" fill="${color2}" d="${svg}"/>`
+                    : svg
+                }
                 </g>`
         }
         return dataBoxes
@@ -174,20 +184,17 @@ export default async function profileWidget(
                                             <image width="200" height="200" xlink:href="data:image/jpeg;base64,${avatar}"/>
                                         </pattern>
                                     </defs>
-                                    ${buildCard(width, height, '#FFFFFF')}
+                                    ${buildCard(width, height, theme.background)}
                                     <g id="profile-card">
                                         <rect id="profile-image" width="65" height="65" rx="30" transform="translate(52 47)" fill="url(#pattern)"/>
-                                        <text id="text-name" data-name="text-name" transform="translate(145 78)" font-size="26" font-family="Roboto-Medium, Roboto, sans-serif" font-weight="500"><tspan x="0" y="0">${
-                                            response.data.name === null
-                                                ? response.data.login
-                                                : response.data.name
-                                        }</tspan></text>
-                                        <text id="text-url" data-name="text-url" transform="translate(145 102)" fill="#bfbfbf" font-size="16" font-family="Roboto-Regular, Roboto, sans-serif"><tspan x="0" y="0">GitHub.com/${
-                                            response.data.login
-                                        }</tspan></text>
-                                        <g id="data-boxes" transform="translate(${
-                                            width - 52
-                                        } ${(height - 37) / 2})">
+                                        <text id="text-name" fill="${theme.title}" data-name="text-name" transform="translate(145 78)" font-size="26" font-family="Roboto-Medium, Roboto, sans-serif" font-weight="500"><tspan x="0" y="0">${response.data.name === null
+                ? response.data.login
+                : response.data.name
+            }</tspan></text>
+                                        <text id="text-url" data-name="text-url" transform="translate(145 102)" fill="#bfbfbf" font-size="16" font-family="Roboto-Regular, Roboto, sans-serif"><tspan x="0" y="0">GitHub.com/${response.data.login
+            }</tspan></text>
+                                        <g id="data-boxes" transform="translate(${width - 52
+            } ${(height - 37) / 2})">
                                             ${dataBoxes}
                                         </g>
                                     </g>
