@@ -6,16 +6,61 @@
 <br/><br/>
 
 ## Widgets
+
 ### Skills
 
 A clear way to give an overview of programming languages, tools, and software that you're familiar with.
 
+#### Languages
+
+
 Default             |  &includeNames=true
 :-------------------------:|:-------------------------:
-[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?names=js,ts,java,php,python,html,css,c,cpp,csharp,swift,rust,ruby,kotlin,erlang,dart,go,scala,elm,bash,r,xml,json,yaml,postgresql,mysql,haskell,powershell,lua,visualbasic,x86,arm,groovy,perl,solidity,fortran,sass,graphql,clojure,clojurescript,markdown)](https://github.com/Jurredr/github-widgetbox)  |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?names=js,ts,java,php,python,html,css,c,cpp,csharp,swift,rust,ruby,kotlin,erlang,dart,go,scala,elm,bash,r,xml,json,yaml,postgresql,mysql,haskell,powershell,lua,visualbasic,x86,arm,groovy,perl,solidity,fortran,sass,graphql,clojure,clojurescript,markdown&includeNames=true)](https://github.com/Jurredr/github-widgetbox)
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?languages=js,ts,java,php,python,html,css,c,cpp,csharp,swift,rust,ruby,kotlin,erlang,dart,go,scala,elm,bash,r,xml,json,yaml,postgresql,mysql,haskell,powershell,lua,visualbasic,x86,arm,groovy,perl,solidity,fortran,sass,graphql,clojure,clojurescript,markdown)](https://github.com/Jurredr/github-widgetbox)  |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?languages=js,ts,java,php,python,html,css,c,cpp,csharp,swift,rust,ruby,kotlin,erlang,dart,go,scala,elm,bash,r,xml,json,yaml,postgresql,mysql,haskell,powershell,lua,visualbasic,x86,arm,groovy,perl,solidity,fortran,sass,graphql,clojure,clojurescript,markdown&includeNames=true)](https://github.com/Jurredr/github-widgetbox)
 
 ```md
-[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?names=js,ts,java,php,python,html,css,c,cpp,csharp,swift,rust,ruby,kotlin,erlang,dart,go,scala,elm,bash,r,xml,json,yaml,postgresql,mysql,haskell,powershell,lua,visualbasic,x86,arm,groovy,perl,solidity,fortran,sass,graphql,clojure,clojurescript,markdown)](https://github.com/Jurredr/github-widgetbox)
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?languages=js,ts,java,php,python,html,css,c,cpp,csharp,swift,rust,ruby,kotlin,erlang,dart,go,scala,elm,bash,r,xml,json,yaml,postgresql,mysql,haskell,powershell,lua,visualbasic,x86,arm,groovy,perl,solidity,fortran,sass,graphql,clojure,clojurescript,markdown)](https://github.com/Jurredr/github-widgetbox)
+```
+
+#### Frameworks
+
+Default             |  &includeNames=true
+:-------------------------:|:-------------------------:
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?frameworks=vue,react,nuxt,next,django,flutter,electron,bootstrap,gatsby,nest,tailwind,windi,express,svelte,angular,dotnetcore,laravel,ionic,dotnet)](https://github.com/Jurredr/github-widgetbox)  |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?frameworks=vue,react,nuxt,next,django,flutter,electron,bootstrap,gatsby,nest,tailwind,windi,express,svelte,angular,dotnetcore,laravel,ionic,dotnet&includeNames=true)](https://github.com/Jurredr/github-widgetbox)
+
+```md
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?frameworks=vue,react,nuxt,next,django,flutter,electron,bootstrap,gatsby,nest,tailwind,windi,express,svelte,angular,dotnetcore,laravel,ionic,dotnet)](https://github.com/Jurredr/github-widgetbox)
+```
+
+#### Libraries
+
+Default             |  &includeNames=true
+:-------------------------:|:-------------------------:
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?libraries=babel,p5,tensorflow,jquery)](https://github.com/Jurredr/github-widgetbox)  |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?libraries=babel,p5,tensorflow,jquery&includeNames=true)](https://github.com/Jurredr/github-widgetbox)
+
+```md
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?libraries=babel,p5,tensorflow,jquery)](https://github.com/Jurredr/github-widgetbox)
+```
+
+#### Tools
+
+Default             |  &includeNames=true
+:-------------------------:|:-------------------------:
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?tools=git,docker,npm,yarn,webpack,gulp,firebase,mongodb,wordpress,shopify,woocommerce,vercel,redis,nodejs,heroku,apache,nginx,aws,jupyter,gradle,prettier)](https://github.com/Jurredr/github-widgetbox)  |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?tools=git,docker,npm,yarn,webpack,gulp,firebase,mongodb,wordpress,shopify,woocommerce,vercel,redis,nodejs,heroku,apache,nginx,aws,jupyter,gradle,prettier&includeNames=true)](https://github.com/Jurredr/github-widgetbox)
+
+```md
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?tools=git,docker,npm,yarn,webpack,gulp,firebase,mongodb,wordpress,shopify,woocommerce,vercel,redis,nodejs,heroku,apache,nginx,aws,jupyter,gradle,prettier)](https://github.com/Jurredr/github-widgetbox)
+```
+
+
+#### Software & IDE's
+
+Default             |  &includeNames=true
+:-------------------------:|:-------------------------:
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?software=linux)](https://github.com/Jurredr/github-widgetbox)  |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?software=linux&includeNames=true)](https://github.com/Jurredr/github-widgetbox)
+
+```md
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?software=linux)](https://github.com/Jurredr/github-widgetbox)
 ```
 
 <br/><br/>
@@ -38,8 +83,8 @@ Show off your profile with some interesting statistics. Perfect for profile READ
 * [x] Fix skills text being off-center
 * [ ] Make all widgets a modular size
 * [ ] Add themes (dark mode)
-* [ ] Add Skills: Tools & Frameworks widget
-* [ ] Add Skills: Software & IDEs widget
+* [x] Add Skills: Tools & Frameworks widget
+* [x] Add Skills: Software & IDEs widget
 * [ ] Add Profile Tag widget
 * [ ] Add Skill Tag widget
 * [ ] Add Commit Streak widget
