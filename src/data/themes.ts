@@ -1,16 +1,16 @@
-import { Theme } from "../interfaces/Theme";
+import { Theme } from '../interfaces/Theme'
 
-const themes:Theme[] = [
+const themes: Theme[] = [
     {
-        name:['dark', 'darkmode'],
-        background: '#18191A',
-        title: '#E4E6EB'
+        name: ['dark', 'darkmode'],
+        background: '#201D2A',
+        title: '#E4E6EB',
     },
     {
-        name:['default', 'light'],
+        name: ['default', 'light'],
         background: '#FFFFFF',
-        title: '#000000'
-    }
+        title: '#000000',
+    },
 ]
 
-export default themes;
+export default themes
