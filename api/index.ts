@@ -13,11 +13,13 @@ app.use('/api', routes)
 
 // Send error widget for incorrect request URL
 app.use('*', (req: Request, res: Response) => {
-    res.setHeader("Content-Type", "image/svg+xml");
+    res.setHeader('Content-Type', 'image/svg+xml')
     res.send(errorWidget('Unknown', '-28%', 'Invalid API URL!', '-19%'))
 })
 
 // Start listening on defined port
 app.listen(process.env.PORT, () => {
-    console.log(`Github-WidgetBox listening at http://localhost:${process.env.PORT}`)
+    console.log(
+        `Github-WidgetBox listening at http://localhost:${process.env.PORT}`
+    )
 })

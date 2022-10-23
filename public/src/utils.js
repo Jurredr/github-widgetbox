@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.findData = exports.requestInBase64 = exports.getBoolean = exports.isValidHexColor = void 0;
+exports.getTheme = exports.findData = exports.requestInBase64 = exports.getBoolean = exports.isValidHexColor = void 0;
 const axios_1 = __importDefault(require("axios"));
 function isValidHexColor(hexColor) {
     return new RegExp(/^([A-Fa-f0-9]{8}|[A-Fa-f0-9]{6}|[A-Fa-f0-9]{3}|[A-Fa-f0-9]{4})$/).test(hexColor);
@@ -28,4 +28,12 @@ function findData(data, name) {
     })[0];
 }
 exports.findData = findData;
+function getTheme(themes, themeName) {
+    return themes.filter(function (themes) {
+        return themes.name
+            .map((theme) => theme.toUpperCase())
+            .includes(themeName.toUpperCase());
+    })[0];
+}
+exports.getTheme = getTheme;
 //# sourceMappingURL=utils.js.map
