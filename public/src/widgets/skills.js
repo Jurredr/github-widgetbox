@@ -49,12 +49,12 @@ function skillsWidget(languagesString, frameworksString, librariesString, toolsS
         softwareString = 'undefined';
     }
     // Set the theme
-    let theme = utils_1.getTheme(themes_1.default, 'default');
+    let theme = (0, utils_1.getTheme)(themes_1.default, 'default');
     if (themeString) {
-        theme = utils_1.getTheme(themes_1.default, themeString);
+        theme = (0, utils_1.getTheme)(themes_1.default, themeString);
     }
     if (!theme) {
-        theme = utils_1.getTheme(themes_1.default, 'default');
+        theme = (0, utils_1.getTheme)(themes_1.default, 'default');
     }
     const languageList = languagesString.split(',');
     const frameworkList = frameworksString.split(',');
@@ -110,7 +110,7 @@ function skillsWidget(languagesString, frameworksString, librariesString, toolsS
         for (let i = 0; i < listToBuild.length; i++) {
             // Check the data and add the first result that isn't defined.
             // It checks the languages first, then the frameworks, and then the libraries.
-            let foundData = utils_1.findData(languages_1.default, listToBuild[i]) || utils_1.findData(frameworks_1.default, listToBuild[i]) || utils_1.findData(libraries_1.default, listToBuild[i]) || utils_1.findData(tools_1.default, listToBuild[i]) || utils_1.findData(software_ides_1.default, listToBuild[i]);
+            let foundData = (0, utils_1.findData)(languages_1.default, listToBuild[i]) || (0, utils_1.findData)(frameworks_1.default, listToBuild[i]) || (0, utils_1.findData)(libraries_1.default, listToBuild[i]) || (0, utils_1.findData)(tools_1.default, listToBuild[i]) || (0, utils_1.findData)(software_ides_1.default, listToBuild[i]);
             if (foundData === undefined) {
                 foundData = {
                     name: [''],
@@ -125,7 +125,7 @@ function skillsWidget(languagesString, frameworksString, librariesString, toolsS
             const row = Math.floor(i / 7);
             const transX = 102 * (i - row * 7);
             const transY = ROW * row + (includeNames && row > 0 ? 25 * row : 0);
-            boxes += gradient_box_1.default(
+            boxes += (0, gradient_box_1.default)(
             // Combine the index and the type number.
             (i * Math.pow(10, Math.floor(Math.log10(type)) + 1) + type), foundData.colorFrom, foundData.colorTo, transX, transY);
             boxes +=
@@ -149,24 +149,24 @@ function skillsWidget(languagesString, frameworksString, librariesString, toolsS
     return `
     <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"
     xmlns="http://www.w3.org/2000/svg">
-        ${card_1.default(width, height, theme.background)}
+        ${(0, card_1.default)(width, height, theme.background)}
         <g id="header-text" transform="translate(60 60)">
             <text id="skills" fill="${theme.title}" transform="translate(0 44)" font-size="42" font-family="Roboto-Medium, Roboto, sans-serif" font-weight="500">
                 <tspan x="0" y="0">Skills</tspan>
             </text>
-            <text style="display:${languageList.length <= 1 && languageList[0] === 'undefined' ? "none" : "block"}" id="languages" transform="translate(0 ${FIRST_ROW})" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
+            <text style="display:${languageList.length <= 1 && languageList[0] === 'undefined' ? "none" : "block"}" id="languages" transform="translate(0 ${FIRST_ROW})" fill="${theme.subtitle}" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
                 <tspan x="0" y="0">Languages</tspan>
             </text>
-            <text style="display:${frameworkList.length <= 1 && frameworkList[0] === 'undefined' ? "none" : "block"}" id="frameworks" transform="translate(0 ${frameworkTitleHeight})" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
+            <text style="display:${frameworkList.length <= 1 && frameworkList[0] === 'undefined' ? "none" : "block"}" id="frameworks" transform="translate(0 ${frameworkTitleHeight})" fill="${theme.subtitle}" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
                 <tspan x="0" y="0">Frameworks</tspan>
             </text>
-            <text style="display:${libraryList.length <= 1 && libraryList[0] === 'undefined' ? "none" : "block"}" id="libraries" transform="translate(0 ${libraryTitleHeight})" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
+            <text style="display:${libraryList.length <= 1 && libraryList[0] === 'undefined' ? "none" : "block"}" id="libraries" transform="translate(0 ${libraryTitleHeight})" fill="${theme.subtitle}" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
                 <tspan x="0" y="0">Libraries</tspan>
             </text>
-            <text style="display:${toolsList.length <= 1 && toolsList[0] === 'undefined' ? "none" : "block"}" id="tools" transform="translate(0 ${toolsTitleHeight})" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
+            <text style="display:${toolsList.length <= 1 && toolsList[0] === 'undefined' ? "none" : "block"}" id="tools" transform="translate(0 ${toolsTitleHeight})" fill="${theme.subtitle}" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
                 <tspan x="0" y="0">Tools</tspan>
             </text>
-            <text style="display:${softwareList.length <= 1 && softwareList[0] === 'undefined' ? "none" : "block"}" id="software" transform="translate(0 ${softwareTitleHeight})" fill="#bfbfbf" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
+            <text style="display:${softwareList.length <= 1 && softwareList[0] === 'undefined' ? "none" : "block"}" id="software" transform="translate(0 ${softwareTitleHeight})" fill="${theme.subtitle}" font-size="24" font-family="Roboto-Regular, Roboto, sans-serif">
                 <tspan x="0" y="0">Software</tspan>
             </text>
         </g>
