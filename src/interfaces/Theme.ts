@@ -8,5 +8,6 @@
 export interface Theme {
     name: Array<string>
     background: string
-    title: string
+    title: string,
+    subtitle: string
 }

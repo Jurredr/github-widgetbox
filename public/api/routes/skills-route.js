@@ -27,14 +27,14 @@ router.get('/', function (req, res) {
     res.setHeader('Content-Type', 'image/svg+xml');
     // Check if languages argument is not present
     if (!languages && !frameworks && !libraries && !names && !tools && !software) {
-        res.send(error_1.default('Skills', '-24%', 'Languages are undefined!', '-28%'));
+        res.send((0, error_1.default)('Skills', '-24%', 'Languages are undefined!', '-28%'));
         return;
     }
     if (names) {
-        res.send(skills_1.default(String(names), undefined, undefined, undefined, undefined, utils_1.getBoolean(String(includeNames)), String(theme)));
+        res.send((0, skills_1.default)(String(names), undefined, undefined, undefined, undefined, (0, utils_1.getBoolean)(String(includeNames)), String(theme)));
     }
     else {
-        res.send(skills_1.default(String(languages), String(frameworks), String(libraries), String(tools), String(software), utils_1.getBoolean(String(includeNames)), String(theme)));
+        res.send((0, skills_1.default)(String(languages), String(frameworks), String(libraries), String(tools), String(software), (0, utils_1.getBoolean)(String(includeNames)), String(theme)));
     }
     // Grab the Skills widget
 });
