@@ -78,7 +78,7 @@ Show off your profile with some interesting statistics. Perfect for profile READ
 <br/><br/>
 ### Themes
 
-It can vary in the different themes that we have ready for you, being able to check all the available themes in  [themes.md](https://github.com/Jurredr/github-widgetbox/blob/master/THEMES.md)
+It can vary in the different themes that we have ready for you, being able to check all the available themes in  [themes.md](https://github.com/Jurredr/github-widgetbox/blob/master/THEMES.md) If you want to see all the themes that we have already created and just went to [themes.ts](https://github.com/Jurredr/github-widgetbox/blob/9bd0e12a8a79b44b1e714f0c74aa3704091a0360/src/data/themes.ts), feel free to create yours and PR.
 
 
 &theme=darkmode
