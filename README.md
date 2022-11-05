@@ -70,11 +70,35 @@ Show off your profile with some interesting statistics. Perfect for profile READ
 
 
 &data=followers,repositories,stars,commits           
-:-------------------------:
 [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits)](https://github.com/Jurredr/github-widgetbox)
 
 ```md
 [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits)](https://github.com/Jurredr/github-widgetbox)
+```
+<br/><br/>
+### Themes
+
+It can vary in the different themes that we have ready for you, being able to check all the available themes in  [themes.md](https://github.com/Jurredr/github-widgetbox/blob/master/THEMES.md) If you want to see all the themes that we have already created and just went to [themes.ts](https://github.com/Jurredr/github-widgetbox/blob/9bd0e12a8a79b44b1e714f0c74aa3704091a0360/src/data/themes.ts), feel free to create yours and PR.
+
+
+&theme=darkmode
+
+darkmode             |  default
+:-------------------------:|:-------------------------:       
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits&theme=darkmode)](https://github.com/Jurredr/github-widgetbox) |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits&theme=default)](https://github.com/Jurredr/github-widgetbox)<br/>
+
+
+viridescent             |  carbon
+:-------------------------:|:-------------------------:
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits&theme=viridescent)](https://github.com/Jurredr/github-widgetbox) |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits&theme=carbon)](https://github.com/Jurredr/github-widgetbox)<br/>
+
+
+nautilus             |  serika
+:-------------------------:|:-------------------------:
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits&theme=nautilus)](https://github.com/Jurredr/github-widgetbox) |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits&theme=serika)](https://github.com/Jurredr/github-widgetbox)
+
+```md
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits&theme=nautilus)](https://github.com/Jurredr/github-widgetbox)
 ```
 
 <br/><br/>
