@@ -29,10 +29,10 @@ const softwareIDEs = [
         `,
         width: 30.857,
         height: 36,
-        xOffset: 0,
+        xOffset: -2,
     },
     {
-        name: ['vscode'],
+        name: ['VSCode'],
         colorFrom: '#1F9CF0',
         colorTo: '#0065A9',
         icon: `<svg width="35.995" height="25.89" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
