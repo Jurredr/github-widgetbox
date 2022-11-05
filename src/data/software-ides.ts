@@ -13,6 +13,24 @@ const softwareIDEs: IconData[] = [
         height: 36,
         xOffset: 0,
     },
+    {
+        name: ['Windows'],
+        colorFrom: '#0067b8',
+        colorTo: '#006cac',
+        icon: `
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" viewBox="0 0 512 512" xml:space="preserve" width="36" height="36">
+            <g>
+                <path id="rect65" style="fill:#fff;" d="M0,0h247.24v247.24H0V0z"/>
+                <path id="rect165" style="fill:#fff;" d="M264.76,247.24V0H512v247.24H264.76z"/>
+                <path id="rect413" style="fill:#fff;" d="M0,264.76h247.24V512H0V264.76z"/>
+                <path id="rect415" style="fill:#fff;" d="M264.76,512V264.76H512V512H264.76z"/>
+            </g>
+        </svg>
+        `,
+        width: 30.857,
+        height: 36,
+        xOffset: 0,
+    },
 ]
 
 export default softwareIDEs
