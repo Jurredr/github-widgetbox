@@ -57,10 +57,10 @@ Default             |  &includeNames=true
 
 Default             |  &includeNames=true
 :-------------------------:|:-------------------------:
-[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?software=linux)](https://github.com/Jurredr/github-widgetbox)  |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?software=linux&includeNames=true)](https://github.com/Jurredr/github-widgetbox)
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?software=linux,windows,vscode)](https://github.com/Jurredr/github-widgetbox)  |  [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?software=linux,windows,vscode&includeNames=true)](https://github.com/Jurredr/github-widgetbox)
 
 ```md
-[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?software=linux)](https://github.com/Jurredr/github-widgetbox)
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/skills?software=linux,windows,vscode)](https://github.com/Jurredr/github-widgetbox)
 ```
 
 <br/><br/>
@@ -69,7 +69,7 @@ Default             |  &includeNames=true
 Show off your profile with some interesting statistics. Perfect for profile READMEs.
 
 
-&data=followers,repositories,stars,commits           
+`&data=followers,repositories,stars,commits`           
 [![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Jurredr&data=followers,repositories,stars,commits)](https://github.com/Jurredr/github-widgetbox)
 
 ```md
@@ -78,10 +78,11 @@ Show off your profile with some interesting statistics. Perfect for profile READ
 <br/><br/>
 ### Themes
 
-It can vary in the different themes that we have ready for you, being able to check all the available themes in  [themes.md](https://github.com/Jurredr/github-widgetbox/blob/master/THEMES.md) If you want to see all the themes that we have already created and just went to [themes.ts](https://github.com/Jurredr/github-widgetbox/blob/9bd0e12a8a79b44b1e714f0c74aa3704091a0360/src/data/themes.ts), feel free to create yours and PR.
+GitHub WidgetBox supports a great variety of different themes for all widgets, like the ones below. 
+You can check out more examples in [themes.md](https://github.com/Jurredr/github-widgetbox/blob/master/THEMES.md), or have a look at all themes in the [themes.ts](https://github.com/Jurredr/github-widgetbox/blob/9bd0e12a8a79b44b1e714f0c74aa3704091a0360/src/data/themes.ts) file. Feel free to create your own theme(s) and add them to that `themes.ts` file. Make sure to create a PR afterwards to share it with everyone else!
 
 
-&theme=darkmode
+`&theme=darkmode`
 
 darkmode             |  default
 :-------------------------:|:-------------------------:       
@@ -108,6 +109,7 @@ nautilus             |  serika
 * [x] Add themes (dark mode)
 * [x] Add Skills: Tools & Frameworks widget
 * [x] Add Skills: Software & IDEs widget
+* [ ] Make autobuilder instead of manual build and push
 * [ ] Count organization repositories (+ their stars)
 * [ ] Truncate name if too long on profile widget
 * [ ] Make all widgets a modular size
