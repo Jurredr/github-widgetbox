@@ -979,6 +979,12 @@ const themes = [
         title: '#892948',
         subtitle: '#bfbfbf',
     },
+    {
+        name: ['synthwave'],
+        background: '#2c263c',
+        title: '#cf2ba2',
+        subtitle: '#f1914c',
+    },
 ];
 exports.default = themes;
 //# sourceMappingURL=themes.js.map
